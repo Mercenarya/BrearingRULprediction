@@ -1,0 +1,38 @@
+# Hyperparameter configuration for Bearing RUL Prediction
+
+# Data parameters
+data:
+  sampling_rate: 12000  # Hz
+  window_size: 1024
+  overlap: 0.5
+  normalization: "standard"  # or "minmax"
+
+# Model parameters
+model:
+  cnn_scales: [early, mid, late]
+  fusion_type: "concat"  # early, mid, late
+  lstm_hidden_size: 128
+  lstm_num_layers: 2
+  dropout_rate: 0.3
+
+# Training parameters
+training:
+  batch_size: 64
+  learning_rate: 0.001
+  num_epochs: 100
+  early_stopping_patience: 10
+  optimizer: "adam"
+  loss_function: "stage_aware_phm_loss"
+  alpha: 0.5  # PHM loss weighting
+  beta: 0.3   # PHM loss weighting
+
+# Evaluation parameters
+evaluation:
+  metrics: ["mae", "rmse", "r2", "phm_score"]
+  cross_dataset: true
+
+# Logging parameters
+logging:
+  use_wandb: true
+  project_name: "bearing_rul_prediction"
+  log_interval: 10
