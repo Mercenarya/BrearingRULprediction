@@ -1,7 +1,12 @@
 """
 Main training loop for Bearing RUL prediction models.
 """
-import os
+import os,sys
+
+CURRENT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(CURRENT,"..",".."))
+sys.path.append(ROOT)
+
 import yaml
 import torch
 import torch.nn as nn
@@ -14,7 +19,10 @@ from src.models.rul_model import RULModel
 from src.losses.stage_aware_loss import StageAwarePHMLoss
 from src.training.trainer import Trainer
 
-def load_config(config_path="config.yaml"):
+CONF = os.path.join(ROOT,"config.yaml")
+print(ROOT)
+
+def load_config(config_path=CONF):
     """
     Load configuration from YAML file.
 
@@ -24,7 +32,7 @@ def load_config(config_path="config.yaml"):
     Returns:
         dict: Configuration dictionary
     """
-    with open(config_path, 'r') as f:
+    with open(config_path, 'r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
     return config
 
@@ -98,9 +106,9 @@ def main():
 
     # Create data loaders
     train_loader, val_loader, test_loader = create_data_loaders(
-        train_path=os.path.join('data', 'processed', 'train.npz'),
-        val_path=os.path.join('data', 'processed', 'val.npz'),
-        test_path=os.path.join('data', 'processed', 'test.npz'),
+        train_path=os.path.join(ROOT,'data', 'processed', 'train.npz'),
+        val_path=os.path.join(ROOT,'data', 'processed', 'val.npz'),
+        test_path=os.path.join(ROOT,'data', 'processed', 'test.npz'),
         batch_size=config['training']['batch_size'],
         num_workers=config.get('training', {}).get('num_workers', 0)
     )
@@ -126,7 +134,7 @@ def main():
 
     # Setup learning rate scheduler
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, mode='min', factor=0.5, patience=5, verbose=True
+        optimizer, mode='min', factor=0.5, patience=5
     )
 
     # Setup trainer

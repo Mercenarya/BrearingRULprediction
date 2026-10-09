@@ -1,11 +1,17 @@
 """
 Trainer class for handling model training, validation, and checkpointing.
 """
-import os
+import os, sys
+
+CURRENT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(CURRENT, "..", ".."))
+sys.path.append(ROOT)
+
 import torch
 import numpy as np
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import wandb
+from tqdm import tqdm
 from src.evaluation.metrics import calculate_phm_score
 
 class Trainer:
@@ -13,7 +19,7 @@ class Trainer:
     Trainer class for RUL prediction models.
     """
 
-    def __init__(self, model, criterion, optimizer, scheduler=None, device='cpu',
+    def __init__(self, model, criterion, optimizer, scheduler=None, device='cuda',
                  early_stopping_patience=10, checkpoint_dir='checkpoints',
                  use_wandb=False):
         """
@@ -47,12 +53,14 @@ class Trainer:
         self.train_losses = []
         self.val_losses = []
 
-    def train_epoch(self, train_loader):
+    def train_epoch(self, train_loader, epoch_idx=0, num_epochs=1):
         """
-        Train for one epoch.
+        Train for one epoch with progress bar.
 
         Args:
             train_loader (DataLoader): Training data loader
+            epoch_idx (int): Current epoch index
+            num_epochs (int): Total number of epochs
 
         Returns:
             float: Average training loss for the epoch
@@ -61,7 +69,14 @@ class Trainer:
         running_loss = 0.0
         num_batches = len(train_loader)
 
-        for batch in train_loader:
+        # Thêm tqdm hiển thị tiến trình từng Batch
+        pbar = tqdm(
+            train_loader,
+            desc=f"Epoch {epoch_idx+1}/{num_epochs} [Train]",
+            leave=False
+        )
+
+        for batch in pbar:
             # Get data
             vib_inputs = batch['vibration'].to(self.device)
             temp_inputs = batch['temperature'].to(self.device)
@@ -83,12 +98,15 @@ class Trainer:
             # Update running loss
             running_loss += loss.item()
 
+            # Cập nhật giá trị loss thời gian thực trên thanh tiến trình
+            pbar.set_postfix({'loss': f"{loss.item():.4f}"})
+
         epoch_loss = running_loss / num_batches
         return epoch_loss
 
     def validate(self, val_loader):
         """
-        Validate the model.
+        Validate the model with progress bar.
 
         Args:
             val_loader (DataLoader): Validation data loader
@@ -101,8 +119,11 @@ class Trainer:
         all_preds = []
         all_labels = []
 
+        # Thêm tqdm cho lượt validation
+        pbar = tqdm(val_loader, desc="Validating", leave=False)
+
         with torch.no_grad():
-            for batch in val_loader:
+            for batch in pbar:
                 # Get data
                 vib_inputs = batch['vibration'].to(self.device)
                 temp_inputs = batch['temperature'].to(self.device)
@@ -182,7 +203,7 @@ class Trainer:
         if is_best:
             best_path = os.path.join(self.checkpoint_dir, 'best_model.pt')
             torch.save(checkpoint, best_path)
-            print(f"Saved new best model to {best_path}")
+            print(f"Saved new best model to {best_path}", flush=True)
 
     def train(self, train_loader, val_loader, num_epochs):
         """
@@ -193,11 +214,11 @@ class Trainer:
             val_loader (DataLoader): Validation data loader
             num_epochs (int): Number of epochs to train
         """
-        print(f"Starting training for {num_epochs} epochs...")
+        print(f"Starting training for {num_epochs} epochs...", flush=True)
 
         for epoch in range(num_epochs):
             # Train for one epoch
-            train_loss = self.train_epoch(train_loader)
+            train_loss = self.train_epoch(train_loader, epoch, num_epochs)
             self.train_losses.append(train_loss)
 
             # Validate
@@ -224,7 +245,7 @@ class Trainer:
             print(f"Epoch {epoch+1}/{num_epochs}: "
                   f"Train Loss: {train_loss:.4f}, "
                   f"Val Loss: {val_loss:.4f}, "
-                  f"Val MAE: {val_metrics['mae']:.4f}")
+                  f"Val MAE: {val_metrics['mae']:.4f}", flush=True)
 
             # Check for improvement
             if val_loss < self.best_val_loss:
@@ -236,10 +257,10 @@ class Trainer:
 
             # Early stopping check
             if self.epochs_no_improve >= self.early_stopping_patience:
-                print(f"Early stopping triggered after {epoch+1} epochs")
+                print(f"Early stopping triggered after {epoch+1} epochs", flush=True)
                 break
 
-        print("Training completed!")
+        print("Training completed!", flush=True)
 
 if __name__ == "__main__":
     # Example usage
