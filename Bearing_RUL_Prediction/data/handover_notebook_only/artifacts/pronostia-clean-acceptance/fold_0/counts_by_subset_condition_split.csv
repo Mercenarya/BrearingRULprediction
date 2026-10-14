@@ -1,0 +1,11 @@
+subset,condition,split,bearings,files,vibration_files,temperature_files,acquisitions,windows
+Full_Test_Set,OC1,excluded,5,12404,10973,1431,10973,0
+Full_Test_Set,OC2,excluded,5,6613,5948,665,5948,0
+Full_Test_Set,OC3,excluded,1,506,434,72,434,0
+Learning_set,OC1,train,1,1015,871,144,871,53
+Learning_set,OC1,validation,1,3269,2803,466,2803,175
+Learning_set,OC2,train,2,1859,1708,151,1708,103
+Learning_set,OC3,train,2,2241,2152,89,2152,132
+Test_set,OC1,excluded,5,10251,9047,1204,9047,0
+Test_set,OC2,excluded,5,5024,4560,464,4560,0
+Test_set,OC3,excluded,1,410,352,58,352,0

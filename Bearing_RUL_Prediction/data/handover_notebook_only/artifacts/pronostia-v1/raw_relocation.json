@@ -1,0 +1,8 @@
+{
+  "from": "C:\\Users\\ACER\\Downloads\\Bearing_RUL_Prediction\\data\\raw\\ieee-phm-2012-data-challenge-dataset-master",
+  "to": "C:\\Users\\ACER\\Downloads\\PHM_2012_Raw\\ieee-phm-2012-data-challenge-dataset-master",
+  "verified_files": 43592,
+  "size_checks": "PASS",
+  "representative_sha256_checks": "PASS",
+  "cache_recipe_preserved": true
+}

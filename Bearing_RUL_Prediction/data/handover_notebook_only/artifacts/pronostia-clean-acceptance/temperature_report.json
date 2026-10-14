@@ -1,0 +1,282 @@
+{
+  "Bearing1_1": {
+    "samples": 279517,
+    "removed": 0,
+    "bounds_c": null,
+    "missing_element_fraction": 0.003745986443096682,
+    "missing_acquisition_fraction": 0.0049946485907955765,
+    "alignment_delta_quantiles_s": [
+      0.06566400000156136,
+      0.06566400000156136,
+      0.06566400000156136,
+      0.06566400000156136
+    ],
+    "available_temperature_quantiles_c": [
+      70.37799835205078,
+      116.79000091552734,
+      119.08999633789062,
+      127.0999984741211,
+      164.3699951171875
+    ]
+  },
+  "Bearing1_2": {
+    "samples": 86396,
+    "removed": 0,
+    "bounds_c": null,
+    "missing_element_fraction": 0.011158151549942595,
+    "missing_acquisition_fraction": 0.014925373134328358,
+    "alignment_delta_quantiles_s": [
+      0.09691000000020722,
+      0.09691000000020722,
+      0.09691000000020722,
+      0.09691000000020722
+    ],
+    "available_temperature_quantiles_c": [
+      57.180999755859375,
+      96.83699798583984,
+      101.83000183105469,
+      103.66000366210938,
+      106.13899993896484
+    ]
+  },
+  "Bearing2_1": {
+    "samples": 90037,
+    "removed": 0,
+    "bounds_c": null,
+    "missing_element_fraction": 0.014578759604829856,
+    "missing_acquisition_fraction": 0.01756311745334797,
+    "alignment_delta_quantiles_s": [
+      0.08440999999584164,
+      0.08440999999584164,
+      0.08440999999947962,
+      0.08440999999947962
+    ],
+    "available_temperature_quantiles_c": [
+      66.81900024414062,
+      93.62899780273438,
+      100.3280029296875,
+      102.33999633789062,
+      103.47000122070312
+    ]
+  },
+  "Bearing2_2": {
+    "samples": 0,
+    "removed": 0,
+    "missing_element_fraction": 1.0,
+    "missing_acquisition_fraction": 1.0,
+    "alignment_delta_quantiles_s": [],
+    "available_temperature_quantiles_c": []
+  },
+  "Bearing3_1": {
+    "samples": 52897,
+    "removed": 0,
+    "bounds_c": null,
+    "missing_element_fraction": 0.018446601941747572,
+    "missing_acquisition_fraction": 0.02524271844660194,
+    "alignment_delta_quantiles_s": [
+      0.018790000001899898,
+      0.018790000001899898,
+      0.018790000001899898,
+      0.018790000001899898
+    ],
+    "available_temperature_quantiles_c": [
+      67.09400177001953,
+      93.0,
+      103.07499694824219,
+      104.23500061035156,
+      107.98300170898438
+    ]
+  },
+  "Bearing3_2": {
+    "samples": 0,
+    "removed": 0,
+    "missing_element_fraction": 1.0,
+    "missing_acquisition_fraction": 1.0,
+    "alignment_delta_quantiles_s": [],
+    "available_temperature_quantiles_c": []
+  },
+  "Bearing1_3": {
+    "samples": 0,
+    "removed": 0,
+    "missing_element_fraction": 1.0,
+    "missing_acquisition_fraction": 1.0,
+    "alignment_delta_quantiles_s": [],
+    "available_temperature_quantiles_c": []
+  },
+  "Bearing1_4": {
+    "samples": 112727,
+    "removed": 0,
+    "bounds_c": null,
+    "missing_element_fraction": 0.01263443810359965,
+    "missing_acquisition_fraction": 0.015803336259877086,
+    "alignment_delta_quantiles_s": [
+      0.025039999996806728,
+      0.025040000000444707,
+      0.025040000000444707,
+      0.025040000000444707
+    ],
+    "available_temperature_quantiles_c": [
+      70.03600311279297,
+      117.12999725341797,
+      120.76000213623047,
+      127.22000122070312,
+      129.4199981689453
+    ]
+  },
+  "Bearing1_5": {
+    "samples": 229617,
+    "removed": 0,
+    "bounds_c": null,
+    "missing_element_fraction": 0.0036924413553431797,
+    "missing_acquisition_fraction": 0.005212858384013901,
+    "alignment_delta_quantiles_s": [
+      0.01254000000335509,
+      0.01254000000335509,
+      0.01254000000335509,
+      0.01254000000335509
+    ],
+    "available_temperature_quantiles_c": [
+      65.32499694824219,
+      98.2760009765625,
+      99.84400177001953,
+      100.43499755859375,
+      102.96600341796875
+    ]
+  },
+  "Bearing1_6": {
+    "samples": 229587,
+    "removed": 0,
+    "bounds_c": null,
+    "missing_element_fraction": 0.0038281928757602085,
+    "missing_acquisition_fraction": 0.005212858384013901,
+    "alignment_delta_quantiles_s": [
+      0.07503999999971711,
+      0.07504000000335509,
+      0.07504000000335509,
+      0.07504000000335509
+    ],
+    "available_temperature_quantiles_c": [
+      61.887001037597656,
+      95.09400177001953,
+      97.75299835205078,
+      99.02400207519531,
+      107.10199737548828
+    ]
+  },
+  "Bearing1_7": {
+    "samples": 149517,
+    "removed": 0,
+    "bounds_c": null,
+    "missing_element_fraction": 0.0063249001331557924,
+    "missing_acquisition_fraction": 0.008655126498002663,
+    "alignment_delta_quantiles_s": [
+      0.06253999999898952,
+      0.06253999999898952,
+      0.06253999999898952,
+      0.06253999999898952
+    ],
+    "available_temperature_quantiles_c": [
+      27.650999069213867,
+      98.80899810791016,
+      101.56600189208984,
+      102.43699645996094,
+      103.83100128173828
+    ]
+  },
+  "Bearing2_3": {
+    "samples": 0,
+    "removed": 0,
+    "missing_element_fraction": 1.0,
+    "missing_acquisition_fraction": 1.0,
+    "alignment_delta_quantiles_s": [],
+    "available_temperature_quantiles_c": []
+  },
+  "Bearing2_4": {
+    "samples": 60547,
+    "removed": 0,
+    "bounds_c": null,
+    "missing_element_fraction": 0.015012254901960785,
+    "missing_acquisition_fraction": 0.0196078431372549,
+    "alignment_delta_quantiles_s": [
+      0.06253999999898952,
+      0.06253999999898952,
+      0.06253999999898952,
+      0.06253999999898952
+    ],
+    "available_temperature_quantiles_c": [
+      59.0369987487793,
+      91.23600006103516,
+      98.32099914550781,
+      101.50349807739258,
+      105.48300170898438
+    ]
+  },
+  "Bearing2_5": {
+    "samples": 200107,
+    "removed": 0,
+    "bounds_c": null,
+    "missing_element_fraction": 0.0018028846153846155,
+    "missing_acquisition_fraction": 0.0034965034965034965,
+    "alignment_delta_quantiles_s": [
+      0.0500400000018999,
+      0.0500400000018999,
+      0.0500400000018999,
+      0.0500400000018999
+    ],
+    "available_temperature_quantiles_c": [
+      43.395999908447266,
+      106.05500030517578,
+      108.2300033569336,
+      109.5719985961914,
+      113.03800201416016
+    ]
+  },
+  "Bearing2_6": {
+    "samples": 0,
+    "removed": 0,
+    "missing_element_fraction": 1.0,
+    "missing_acquisition_fraction": 1.0,
+    "alignment_delta_quantiles_s": [],
+    "available_temperature_quantiles_c": []
+  },
+  "Bearing2_7": {
+    "samples": 16537,
+    "removed": 0,
+    "bounds_c": null,
+    "missing_element_fraction": 0.05396075581395349,
+    "missing_acquisition_fraction": 0.06976744186046512,
+    "alignment_delta_quantiles_s": [
+      0.0500400000018999,
+      0.0500400000018999,
+      0.0500400000018999,
+      0.0500400000018999
+    ],
+    "available_temperature_quantiles_c": [
+      89.15499877929688,
+      104.97799682617188,
+      133.78799438476562,
+      159.5679931640625,
+      1254.0050048828125
+    ]
+  },
+  "Bearing3_3": {
+    "samples": 34507,
+    "removed": 0,
+    "bounds_c": null,
+    "missing_element_fraction": 0.027299360795454544,
+    "missing_acquisition_fraction": 0.036931818181818184,
+    "alignment_delta_quantiles_s": [
+      0.01253999999971711,
+      0.01253999999971711,
+      0.01254000000335509,
+      0.01254000000335509
+    ],
+    "available_temperature_quantiles_c": [
+      63.53499984741211,
+      99.64700317382812,
+      107.96299743652344,
+      113.66999816894531,
+      115.7969970703125
+    ]
+  }
+}

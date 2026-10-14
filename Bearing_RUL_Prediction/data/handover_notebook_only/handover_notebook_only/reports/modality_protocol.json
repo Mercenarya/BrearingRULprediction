@@ -1,0 +1,83 @@
+{
+  "folds": [
+    {
+      "fold": "0",
+      "train_missing_temperature": [
+        "Bearing2_2",
+        "Bearing3_2"
+      ],
+      "validation_missing_temperature": [],
+      "test_missing_temperature": []
+    },
+    {
+      "fold": "1",
+      "train_missing_temperature": [
+        "Bearing2_2",
+        "Bearing3_2"
+      ],
+      "validation_missing_temperature": [],
+      "test_missing_temperature": []
+    },
+    {
+      "fold": "2",
+      "train_missing_temperature": [
+        "Bearing2_2",
+        "Bearing3_2"
+      ],
+      "validation_missing_temperature": [],
+      "test_missing_temperature": []
+    },
+    {
+      "fold": "3",
+      "train_missing_temperature": [
+        "Bearing3_2"
+      ],
+      "validation_missing_temperature": [
+        "Bearing2_2"
+      ],
+      "test_missing_temperature": []
+    },
+    {
+      "fold": "4",
+      "train_missing_temperature": [
+        "Bearing2_2",
+        "Bearing3_2"
+      ],
+      "validation_missing_temperature": [],
+      "test_missing_temperature": []
+    },
+    {
+      "fold": "5",
+      "train_missing_temperature": [
+        "Bearing2_2"
+      ],
+      "validation_missing_temperature": [
+        "Bearing3_2"
+      ],
+      "test_missing_temperature": []
+    },
+    {
+      "fold": "official",
+      "train_missing_temperature": [
+        "Bearing2_2",
+        "Bearing3_2"
+      ],
+      "validation_missing_temperature": [],
+      "test_missing_temperature": [
+        "Bearing1_3",
+        "Bearing2_3",
+        "Bearing2_6"
+      ]
+    }
+  ],
+  "fully_missing_bearings": [
+    "Bearing2_2",
+    "Bearing3_2",
+    "Bearing1_3",
+    "Bearing2_3",
+    "Bearing2_6"
+  ],
+  "official_test_fully_missing": 3,
+  "official_test_partially_missing": 8,
+  "policy": "Retain all bearings with per-element mask; do not fabricate temperature. Compare vibration-only and multimodal on identical bearing folds/windows/endpoint ground truth. Additional both-modality subset must list included bearings and reuse train-only normalization."
+}

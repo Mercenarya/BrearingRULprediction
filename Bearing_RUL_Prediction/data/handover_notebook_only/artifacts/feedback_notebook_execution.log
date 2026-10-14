@@ -1,0 +1,180 @@
+C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+data_process.ipynb 2 Import các thư viện xử lý dữ liệu
+data_process.ipynb 4 Nạp cấu hình preprocessing
+data_process.ipynb 6 Khai báo data contract
+data_process.ipynb 8 Định nghĩa natural_key
+data_process.ipynb 10 Định nghĩa file_index
+data_process.ipynb 12 Định nghĩa fingerprint
+data_process.ipynb 14 Định nghĩa write_json
+data_process.ipynb 16 Định nghĩa Parsed
+data_process.ipynb 18 Định nghĩa unwrap_clock
+data_process.ipynb 20 Định nghĩa repair_acquisition_clock
+data_process.ipynb 22 Định nghĩa inspect_file
+data_process.ipynb 24 Định nghĩa assert_disjoint
+data_process.ipynb 26 Định nghĩa protocols
+data_process.ipynb 28 Định nghĩa transform_vibration
+data_process.ipynb 30 Định nghĩa causal_temperature
+data_process.ipynb 32 Định nghĩa load_temperature
+data_process.ipynb 34 Định nghĩa absolute_rul
+data_process.ipynb 36 Định nghĩa Moments
+data_process.ipynb 38 Định nghĩa fit_scaler
+data_process.ipynb 40 Định nghĩa scale_arrays
+data_process.ipynb 42 Định nghĩa window_starts
+data_process.ipynb 44 Định nghĩa detect_delimiter
+data_process.ipynb 46 Định nghĩa detect_header
+data_process.ipynb 48 Định nghĩa load_numeric_rows
+data_process.ipynb 50 Định nghĩa validate_csv_schema
+data_process.ipynb 52 Định nghĩa parse_clock_fields
+data_process.ipynb 54 Định nghĩa parse_csv
+data_process.ipynb 56 Định nghĩa scan_dataset_structure
+data_process.ipynb 58 Định nghĩa scan_inventory_files
+data_process.ipynb 60 Định nghĩa validate_filename_indices
+data_process.ipynb 62 Định nghĩa validate_learning_terminals
+data_process.ipynb 64 Định nghĩa build_acquisition_records
+data_process.ipynb 66 Định nghĩa analyze_inventory_quality
+data_process.ipynb 68 Định nghĩa ground_truth_comparison
+data_process.ipynb 70 Định nghĩa bearing_frames
+data_process.ipynb 72 Định nghĩa label_bearing
+data_process.ipynb 74 Định nghĩa load_bearing_temperature
+data_process.ipynb 76 Định nghĩa align_bearing_temperature
+data_process.ipynb 78 Định nghĩa validate_temperature_alignment
+data_process.ipynb 80 Định nghĩa transform_bearing_vibration
+data_process.ipynb 82 Định nghĩa assemble_bearing_shard
+data_process.ipynb 84 Định nghĩa export_acquisition_shards
+data_process.ipynb 86 Định nghĩa temperature_coverage
+data_process.ipynb 88 Định nghĩa make_temperature_report
+data_process.ipynb 90 Định nghĩa make_label_report
+data_process.ipynb 92 Định nghĩa scale_fold_shards
+data_process.ipynb 94 Định nghĩa export_scaled_shards
+data_process.ipynb 96 Định nghĩa window_metadata
+data_process.ipynb 98 Định nghĩa export_window_metadata
+data_process.ipynb 100 Định nghĩa build_cache_index
+data_process.ipynb 102 Định nghĩa fold_manifest
+data_process.ipynb 104 Định nghĩa cache_identity
+data_process.ipynb 106 Định nghĩa verify_source
+data_process.ipynb 108 Định nghĩa verify_identity
+data_process.ipynb 110 Định nghĩa PronostiaDataset
+data_process.ipynb 112 Định nghĩa pronostia_loader
+data_process.ipynb 114 Định nghĩa validate_split_scaler
+data_process.ipynb 116 Định nghĩa validate_window_shard
+data_process.ipynb 118 Định nghĩa validate_temperature_shard
+data_process.ipynb 120 Định nghĩa validate_one_shard
+data_process.ipynb 122 Định nghĩa validate_loader_batch
+data_process.ipynb 124 Định nghĩa validate_one_loader
+data_process.ipynb 126 Định nghĩa benchmark_loader
+data_process.ipynb 128 Định nghĩa aggregate_fold_counts
+data_process.ipynb 130 Định nghĩa calculate_aliasing_qc
+data_process.ipynb 132 Định nghĩa select_qc_samples
+data_process.ipynb 134 Định nghĩa plot_waveform_qc
+data_process.ipynb 136 Định nghĩa plot_psd_qc
+data_process.ipynb 138 Định nghĩa plot_rms_qc
+data_process.ipynb 140 Định nghĩa plot_temperature_histogram
+data_process.ipynb 142 Định nghĩa plot_alignment_histogram
+data_process.ipynb 144 Định nghĩa verify_pinned_archive
+data_process.ipynb 146 Định nghĩa download_pinned_archive
+data_process.ipynb 148 Hiển thị môi trường hiện tại
+data_process.ipynb 151 Chuẩn bị thư mục fixture tests
+data_process.ipynb 153 Định nghĩa ParserTests
+data_process.ipynb 155 Định nghĩa ContractTests
+data_process.ipynb 157 Định nghĩa CacheIdentityTests
+data_process.ipynb 159 Định nghĩa make_fixture_raw
+data_process.ipynb 161 Định nghĩa fixture_cache
+data_process.ipynb 163 Định nghĩa FixtureIntegrationTests
+data_process.ipynb 165 Định nghĩa FeedbackRegressionTests
+data_process.ipynb 167 Định nghĩa execute_test_classes
+data_process.ipynb 169 Chạy parser tests
+data_process.ipynb 171 Chạy contract tests
+data_process.ipynb 173 Chạy cache identity tests
+data_process.ipynb 175 Chạy feedback regression tests
+data_process.ipynb 177 Chạy integration fixture tests
+data_process.ipynb 179 Tổng hợp test results
+data_process.ipynb 181 Xuất test summary
+data_process.ipynb 183 Xác nhận định nghĩa preprocessing
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+data_pipeline_scripts.ipynb 2 Import công cụ notebook
+data_pipeline_scripts.ipynb 4 Nạp định nghĩa từ data notebook
+data_pipeline_scripts.ipynb 6 Cấu hình đường dẫn và execution mode
+data_pipeline_scripts.ipynb 8 Hiển thị môi trường chạy hiện tại
+data_pipeline_scripts.ipynb 10 Đặt random seed
+data_pipeline_scripts.ipynb 12 Giới hạn CPU threads
+data_pipeline_scripts.ipynb 14 Kiểm tra output directory
+data_pipeline_scripts.ipynb 16 Chuẩn bị fixture tests
+data_pipeline_scripts.ipynb 18 Chạy parser tests
+data_pipeline_scripts.ipynb 20 Chạy contract tests
+data_pipeline_scripts.ipynb 22 Chạy identity tests
+data_pipeline_scripts.ipynb 24 Chạy feedback tests
+data_pipeline_scripts.ipynb 26 Chạy integration tests
+data_pipeline_scripts.ipynb 28 Tổng hợp test results
+data_pipeline_scripts.ipynb 30 Nạp ground truth có nguồn
+data_pipeline_scripts.ipynb 32 Scan cấu trúc dataset
+data_pipeline_scripts.ipynb 34 Scan schema và checksum files
+data_pipeline_scripts.ipynb 36 Validate filename indices
+data_pipeline_scripts.ipynb 38 Validate learning terminal completeness
+data_pipeline_scripts.ipynb 40 Build acquisition manifest
+data_pipeline_scripts.ipynb 42 Analyze data quality
+data_pipeline_scripts.ipynb 44 Export inventory manifests
+data_pipeline_scripts.ipynb 46 Export source recipe
+data_pipeline_scripts.ipynb 48 Compare ground truth with Full_Test_Set
+data_pipeline_scripts.ipynb 50 Export ground truth audit
+data_pipeline_scripts.ipynb 52 Select model input bearings
+data_pipeline_scripts.ipynb 54 Create absolute RUL labels
+data_pipeline_scripts.ipynb 56 Load temperature streams
+data_pipeline_scripts.ipynb 58 Align causal temperature
+data_pipeline_scripts.ipynb 60 Validate temperature alignment
+data_pipeline_scripts.ipynb 62 Bổ sung trace nhãn vào manifest
+data_pipeline_scripts.ipynb 64 Export enriched acquisition manifest
+data_pipeline_scripts.ipynb 66 Transform vibration bearings
+data_pipeline_scripts.ipynb 68 Assemble acquisition shards
+data_pipeline_scripts.ipynb 70 Export acquisition shards
+data_pipeline_scripts.ipynb 72 Calculate temperature coverage
+data_pipeline_scripts.ipynb 74 Export temperature coverage
+data_pipeline_scripts.ipynb 76 Analyze missing modality by fold
+data_pipeline_scripts.ipynb 78 Export missing modality protocol
+data_pipeline_scripts.ipynb 80 Create temperature report
+data_pipeline_scripts.ipynb 82 Create label report
+data_pipeline_scripts.ipynb 84 Export label and temperature reports
+data_pipeline_scripts.ipynb 86 Export split protocols
+data_pipeline_scripts.ipynb 88 Resolve fold folders
+data_pipeline_scripts.ipynb 90 Nạp hoặc fit train-only fold scalers
+data_pipeline_scripts.ipynb 92 Export fold scaler provenance
+data_pipeline_scripts.ipynb 94 Export normalized fold shards
+data_pipeline_scripts.ipynb 96 Export window metadata
+data_pipeline_scripts.ipynb 98 Nạp hoặc build fold cache indices
+data_pipeline_scripts.ipynb 100 Export fold cache indices
+data_pipeline_scripts.ipynb 102 Export fold manifests
+data_pipeline_scripts.ipynb 104 Export cache identities
+data_pipeline_scripts.ipynb 106 Validate cache identities
+data_pipeline_scripts.ipynb 108 Validate split and scaler invariants
+data_pipeline_scripts.ipynb 110 Validate shard labels and clocks
+data_pipeline_scripts.ipynb 112 Validate window boundaries
+data_pipeline_scripts.ipynb 114 Validate scaled temperature masks
+data_pipeline_scripts.ipynb 116 Validate full-pass DataLoaders
+data_pipeline_scripts.ipynb 118 Benchmark DataLoader batches
+data_pipeline_scripts.ipynb 120 Aggregate subset-condition-split counts
+data_pipeline_scripts.ipynb 122 Measure process RAM
+data_pipeline_scripts.ipynb 124 Assemble validation report
+data_pipeline_scripts.ipynb 126 Export validation evidence
+data_pipeline_scripts.ipynb 128 Export quality report
+data_pipeline_scripts.ipynb 130 Select learning-only QC samples
+data_pipeline_scripts.ipynb 132 Visualize waveform
+data_pipeline_scripts.ipynb 134 Export waveform figure
+data_pipeline_scripts.ipynb 136 Visualize psd
+data_pipeline_scripts.ipynb 138 Export psd figure
+data_pipeline_scripts.ipynb 140 Visualize rms
+data_pipeline_scripts.ipynb 142 Export rms figure
+data_pipeline_scripts.ipynb 144 Visualize temperature_histogram
+data_pipeline_scripts.ipynb 146 Export temperature_histogram figure
+data_pipeline_scripts.ipynb 148 Visualize alignment_histogram
+data_pipeline_scripts.ipynb 150 Export alignment_histogram figure
+data_pipeline_scripts.ipynb 152 Calculate anti-alias QC
+data_pipeline_scripts.ipynb 154 Validate anti-alias invariant
+data_pipeline_scripts.ipynb 156 Export preprocessing QC
+data_pipeline_scripts.ipynb 158 Display fold summary
+data_pipeline_scripts.ipynb 160 Display official counts
+data_pipeline_scripts.ipynb 162 Assemble clean rebuild summary
+data_pipeline_scripts.ipynb 164 Export clean rebuild proof
+data_pipeline_scripts.ipynb 166 Export compact manifest summary
+data_pipeline_scripts.ipynb 168 Show final acceptance status
+{"clean_notebook_directory": "C:\\Users\\ACER\\Downloads\\Bearing_RUL_Prediction\\.tmp\\notebook_only_clean_20261006_160530", "contains_python_source_files": false, "output_root": "C:\\Users\\ACER\\Downloads\\Bearing_RUL_Prediction\\artifacts\\pronostia_feedback_clean_20261006_160530", "notebooks": [{"notebook": "data_process.ipynb", "status": "PASS", "code_cells": 91, "fresh_kernel": true}, {"notebook": "data_pipeline_scripts.ipynb", "status": "PASS", "code_cells": 84, "fresh_kernel": true}]}

@@ -1,0 +1,167 @@
+test_basic_functionality (test_loss.TestStageAwarePHMLoss.test_basic_functionality)
+Test basic loss computation. ... ok
+test_batch_processing (test_loss.TestStageAwarePHMLoss.test_batch_processing)
+Test loss computation with batches. ... ok
+test_different_parameters (test_loss.TestStageAwarePHMLoss.test_different_parameters)
+Test loss with different alpha, beta, theta values. ... FAIL
+test_edge_cases (test_loss.TestStageAwarePHMLoss.test_edge_cases)
+Test edge cases. ... ok
+test_over_prediction_penalty (test_loss.TestStageAwarePHMLoss.test_over_prediction_penalty)
+Test that over-prediction is penalized according to beta parameter. ... ERROR
+test_perfect_prediction (test_loss.TestStageAwarePHMLoss.test_perfect_prediction)
+Test loss when predictions are exactly correct. ... ok
+test_reduction_methods (test_loss.TestStageAwarePHMLoss.test_reduction_methods)
+Test different reduction methods. ... ok
+test_stage_boundary_behavior (test_loss.TestStageAwarePHMLoss.test_stage_boundary_behavior)
+Test behavior at the stage boundary (theta). ... ERROR
+test_under_prediction_penalty (test_loss.TestStageAwarePHMLoss.test_under_prediction_penalty)
+Test that under-prediction is penalized according to alpha parameter. ... ERROR
+test_weighted_mae_loss (test_loss.TestStageAwarePHMLoss.test_weighted_mae_loss)
+Test the WeightedMAELoss alternative implementation. ... ERROR
+
+======================================================================
+ERROR: test_over_prediction_penalty (test_loss.TestStageAwarePHMLoss.test_over_prediction_penalty)
+Test that over-prediction is penalized according to beta parameter.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ACER\Downloads\Bearing_RUL_Prediction\tests\test_loss.py", line 70, in test_over_prediction_penalty
+    expected_loss = torch.exp(0.3 * 1.0) - 1
+                    ^^^^^^^^^^^^^^^^^^^^
+TypeError: exp(): argument 'input' (position 1) must be Tensor, not float
+
+======================================================================
+ERROR: test_stage_boundary_behavior (test_loss.TestStageAwarePHMLoss.test_stage_boundary_behavior)
+Test behavior at the stage boundary (theta).
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ACER\Downloads\Bearing_RUL_Prediction\tests\test_loss.py", line 99, in test_stage_boundary_behavior
+    self.assertNotEqual(low_loss.item(), loss_late2.item())
+                        ^^^^^^^^
+NameError: name 'low_loss' is not defined
+
+======================================================================
+ERROR: test_under_prediction_penalty (test_loss.TestStageAwarePHMLoss.test_under_prediction_penalty)
+Test that under-prediction is penalized according to alpha parameter.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ACER\Downloads\Bearing_RUL_Prediction\tests\test_loss.py", line 54, in test_under_prediction_penalty
+    expected_loss = torch.exp(0.5 * 1.0) - 1
+                    ^^^^^^^^^^^^^^^^^^^^
+TypeError: exp(): argument 'input' (position 1) must be Tensor, not float
+
+======================================================================
+ERROR: test_weighted_mae_loss (test_loss.TestStageAwarePHMLoss.test_weighted_mae_loss)
+Test the WeightedMAELoss alternative implementation.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ACER\Downloads\Bearing_RUL_Prediction\tests\test_loss.py", line 204, in test_weighted_mae_loss
+    loss = self.weighted_loss_fn(y_pred, y_true)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\Downloads\Bearing_RUL_Prediction\tests\..\src\losses\stage_aware_loss.py", line 110, in forward
+    weighted_error = early_weight * early_stage * abs_error + \
+                     ^^^^^^^^^^^^
+NameError: name 'early_weight' is not defined
+
+======================================================================
+FAIL: test_different_parameters (test_loss.TestStageAwarePHMLoss.test_different_parameters)
+Test loss with different alpha, beta, theta values.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ACER\Downloads\Bearing_RUL_Prediction\tests\test_loss.py", line 180, in test_different_parameters
+    self.assertGreater(loss_beta_high.item(), loss_beta_low.item())
+AssertionError: -0.39346933364868164 not greater than -0.39346933364868164
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.010s
+
+FAILED (failures=1, errors=4)
+test_cnn_encoder_shapes (test_shapes.TestModelShapes.test_cnn_encoder_shapes)
+Test CNN encoder output shapes. ... ok
+test_cross_modal_attention_shapes (test_shapes.TestModelShapes.test_cross_modal_attention_shapes)
+Test cross-modal attention output shapes. ... ok
+test_dual_path_lstm_shapes (test_shapes.TestModelShapes.test_dual_path_lstm_shapes)
+Test Dual-Path LSTM output shapes. ... FAIL
+test_full_model_shapes (test_shapes.TestModelShapes.test_full_model_shapes)
+Test full RUL model output shapes. ... ERROR
+test_fusion_strategy_shapes (test_shapes.TestModelShapes.test_fusion_strategy_shapes)
+Test fusion strategy output shapes. ... ERROR
+test_regression_head_shapes (test_shapes.TestModelShapes.test_regression_head_shapes)
+Test regression head output shapes. ... ok
+test_shape_consistency_with_documentation (test_shapes.TestModelShapes.test_shape_consistency_with_documentation)
+Test that shapes are consistent with values mentioned in MODEL_WORKFLOW_DETAILED.md. ... ok
+
+======================================================================
+ERROR: test_full_model_shapes (test_shapes.TestModelShapes.test_full_model_shapes)
+Test full RUL model output shapes.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ACER\Downloads\Bearing_RUL_Prediction\tests\test_shapes.py", line 188, in test_full_model_shapes
+    output = model(self.vib_input, self.temp_input)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\Downloads\Bearing_RUL_Prediction\tests\..\src\models\rul_model.py", line 150, in forward
+    rul_prediction = self.regression_head(lstm_features)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\Downloads\Bearing_RUL_Prediction\tests\..\src\models\regression_head.py", line 64, in forward
+    output = self.network(x)
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\container.py", line 259, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (32x384 and 256x128)
+
+======================================================================
+ERROR: test_fusion_strategy_shapes (test_shapes.TestModelShapes.test_fusion_strategy_shapes)
+Test fusion strategy output shapes.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ACER\Downloads\Bearing_RUL_Prediction\tests\test_shapes.py", line 109, in test_fusion_strategy_shapes
+    self.assertEqual(fused_features.shape, expected_shape)
+                     ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'shape'
+
+======================================================================
+FAIL: test_dual_path_lstm_shapes (test_shapes.TestModelShapes.test_dual_path_lstm_shapes)
+Test Dual-Path LSTM output shapes.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ACER\Downloads\Bearing_RUL_Prediction\tests\test_shapes.py", line 135, in test_dual_path_lstm_shapes
+    self.assertEqual(lstm_output.shape, expected_lstm_shape)
+AssertionError: torch.Size([32, 1024, 384]) != (32, 1024, 256)
+
+----------------------------------------------------------------------
+Ran 7 tests in 17.528s
+
+FAILED (failures=1, errors=2)

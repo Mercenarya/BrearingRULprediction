@@ -1,0 +1,811 @@
+{
+  "status": "PASS",
+  "debug": false,
+  "folds": {
+    "fold_0": {
+      "status": "PASS",
+      "errors": []
+    },
+    "fold_1": {
+      "status": "PASS",
+      "errors": []
+    },
+    "fold_2": {
+      "status": "PASS",
+      "errors": []
+    },
+    "fold_3": {
+      "status": "PASS",
+      "errors": []
+    },
+    "fold_4": {
+      "status": "PASS",
+      "errors": []
+    },
+    "fold_5": {
+      "status": "PASS",
+      "errors": []
+    },
+    "official": {
+      "status": "PASS",
+      "errors": []
+    }
+  },
+  "source_files": 43592,
+  "source_hash": "2364f7dd29d49eeaa871d289e430987478de3dd67f4609b9125f258a8918179a",
+  "counts_by_fold": {
+    "fold_0": [
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC1",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 12404,
+        "vibration_files": 10973,
+        "temperature_files": 1431,
+        "acquisitions": 10973,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC2",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 6613,
+        "vibration_files": 5948,
+        "temperature_files": 665,
+        "acquisitions": 5948,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC3",
+        "split": "excluded",
+        "bearings": 1,
+        "files": 506,
+        "vibration_files": 434,
+        "temperature_files": 72,
+        "acquisitions": 434,
+        "windows": 0
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC1",
+        "split": "train",
+        "bearings": 1,
+        "files": 1015,
+        "vibration_files": 871,
+        "temperature_files": 144,
+        "acquisitions": 871,
+        "windows": 53
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC1",
+        "split": "validation",
+        "bearings": 1,
+        "files": 3269,
+        "vibration_files": 2803,
+        "temperature_files": 466,
+        "acquisitions": 2803,
+        "windows": 175
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC2",
+        "split": "train",
+        "bearings": 2,
+        "files": 1859,
+        "vibration_files": 1708,
+        "temperature_files": 151,
+        "acquisitions": 1708,
+        "windows": 103
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC3",
+        "split": "train",
+        "bearings": 2,
+        "files": 2241,
+        "vibration_files": 2152,
+        "temperature_files": 89,
+        "acquisitions": 2152,
+        "windows": 132
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC1",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 10251,
+        "vibration_files": 9047,
+        "temperature_files": 1204,
+        "acquisitions": 9047,
+        "windows": 0
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC2",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 5024,
+        "vibration_files": 4560,
+        "temperature_files": 464,
+        "acquisitions": 4560,
+        "windows": 0
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC3",
+        "split": "excluded",
+        "bearings": 1,
+        "files": 410,
+        "vibration_files": 352,
+        "temperature_files": 58,
+        "acquisitions": 352,
+        "windows": 0
+      }
+    ],
+    "fold_1": [
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC1",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 12404,
+        "vibration_files": 10973,
+        "temperature_files": 1431,
+        "acquisitions": 10973,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC2",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 6613,
+        "vibration_files": 5948,
+        "temperature_files": 665,
+        "acquisitions": 5948,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC3",
+        "split": "excluded",
+        "bearings": 1,
+        "files": 506,
+        "vibration_files": 434,
+        "temperature_files": 72,
+        "acquisitions": 434,
+        "windows": 0
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC1",
+        "split": "train",
+        "bearings": 1,
+        "files": 3269,
+        "vibration_files": 2803,
+        "temperature_files": 466,
+        "acquisitions": 2803,
+        "windows": 174
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC1",
+        "split": "validation",
+        "bearings": 1,
+        "files": 1015,
+        "vibration_files": 871,
+        "temperature_files": 144,
+        "acquisitions": 871,
+        "windows": 54
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC2",
+        "split": "train",
+        "bearings": 2,
+        "files": 1859,
+        "vibration_files": 1708,
+        "temperature_files": 151,
+        "acquisitions": 1708,
+        "windows": 103
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC3",
+        "split": "train",
+        "bearings": 2,
+        "files": 2241,
+        "vibration_files": 2152,
+        "temperature_files": 89,
+        "acquisitions": 2152,
+        "windows": 132
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC1",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 10251,
+        "vibration_files": 9047,
+        "temperature_files": 1204,
+        "acquisitions": 9047,
+        "windows": 0
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC2",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 5024,
+        "vibration_files": 4560,
+        "temperature_files": 464,
+        "acquisitions": 4560,
+        "windows": 0
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC3",
+        "split": "excluded",
+        "bearings": 1,
+        "files": 410,
+        "vibration_files": 352,
+        "temperature_files": 58,
+        "acquisitions": 352,
+        "windows": 0
+      }
+    ],
+    "fold_2": [
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC1",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 12404,
+        "vibration_files": 10973,
+        "temperature_files": 1431,
+        "acquisitions": 10973,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC2",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 6613,
+        "vibration_files": 5948,
+        "temperature_files": 665,
+        "acquisitions": 5948,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC3",
+        "split": "excluded",
+        "bearings": 1,
+        "files": 506,
+        "vibration_files": 434,
+        "temperature_files": 72,
+        "acquisitions": 434,
+        "windows": 0
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC1",
+        "split": "train",
+        "bearings": 2,
+        "files": 4284,
+        "vibration_files": 3674,
+        "temperature_files": 610,
+        "acquisitions": 3674,
+        "windows": 227
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC2",
+        "split": "train",
+        "bearings": 1,
+        "files": 797,
+        "vibration_files": 797,
+        "temperature_files": 0,
+        "acquisitions": 797,
+        "windows": 48
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC2",
+        "split": "validation",
+        "bearings": 1,
+        "files": 1062,
+        "vibration_files": 911,
+        "temperature_files": 151,
+        "acquisitions": 911,
+        "windows": 56
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC3",
+        "split": "train",
+        "bearings": 2,
+        "files": 2241,
+        "vibration_files": 2152,
+        "temperature_files": 89,
+        "acquisitions": 2152,
+        "windows": 132
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC1",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 10251,
+        "vibration_files": 9047,
+        "temperature_files": 1204,
+        "acquisitions": 9047,
+        "windows": 0
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC2",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 5024,
+        "vibration_files": 4560,
+        "temperature_files": 464,
+        "acquisitions": 4560,
+        "windows": 0
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC3",
+        "split": "excluded",
+        "bearings": 1,
+        "files": 410,
+        "vibration_files": 352,
+        "temperature_files": 58,
+        "acquisitions": 352,
+        "windows": 0
+      }
+    ],
+    "fold_3": [
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC1",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 12404,
+        "vibration_files": 10973,
+        "temperature_files": 1431,
+        "acquisitions": 10973,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC2",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 6613,
+        "vibration_files": 5948,
+        "temperature_files": 665,
+        "acquisitions": 5948,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC3",
+        "split": "excluded",
+        "bearings": 1,
+        "files": 506,
+        "vibration_files": 434,
+        "temperature_files": 72,
+        "acquisitions": 434,
+        "windows": 0
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC1",
+        "split": "train",
+        "bearings": 2,
+        "files": 4284,
+        "vibration_files": 3674,
+        "temperature_files": 610,
+        "acquisitions": 3674,
+        "windows": 227
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC2",
+        "split": "train",
+        "bearings": 1,
+        "files": 1062,
+        "vibration_files": 911,
+        "temperature_files": 151,
+        "acquisitions": 911,
+        "windows": 55
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC2",
+        "split": "validation",
+        "bearings": 1,
+        "files": 797,
+        "vibration_files": 797,
+        "temperature_files": 0,
+        "acquisitions": 797,
+        "windows": 49
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC3",
+        "split": "train",
+        "bearings": 2,
+        "files": 2241,
+        "vibration_files": 2152,
+        "temperature_files": 89,
+        "acquisitions": 2152,
+        "windows": 132
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC1",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 10251,
+        "vibration_files": 9047,
+        "temperature_files": 1204,
+        "acquisitions": 9047,
+        "windows": 0
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC2",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 5024,
+        "vibration_files": 4560,
+        "temperature_files": 464,
+        "acquisitions": 4560,
+        "windows": 0
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC3",
+        "split": "excluded",
+        "bearings": 1,
+        "files": 410,
+        "vibration_files": 352,
+        "temperature_files": 58,
+        "acquisitions": 352,
+        "windows": 0
+      }
+    ],
+    "fold_4": [
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC1",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 12404,
+        "vibration_files": 10973,
+        "temperature_files": 1431,
+        "acquisitions": 10973,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC2",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 6613,
+        "vibration_files": 5948,
+        "temperature_files": 665,
+        "acquisitions": 5948,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC3",
+        "split": "excluded",
+        "bearings": 1,
+        "files": 506,
+        "vibration_files": 434,
+        "temperature_files": 72,
+        "acquisitions": 434,
+        "windows": 0
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC1",
+        "split": "train",
+        "bearings": 2,
+        "files": 4284,
+        "vibration_files": 3674,
+        "temperature_files": 610,
+        "acquisitions": 3674,
+        "windows": 227
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC2",
+        "split": "train",
+        "bearings": 2,
+        "files": 1859,
+        "vibration_files": 1708,
+        "temperature_files": 151,
+        "acquisitions": 1708,
+        "windows": 103
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC3",
+        "split": "train",
+        "bearings": 1,
+        "files": 1637,
+        "vibration_files": 1637,
+        "temperature_files": 0,
+        "acquisitions": 1637,
+        "windows": 101
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC3",
+        "split": "validation",
+        "bearings": 1,
+        "files": 604,
+        "vibration_files": 515,
+        "temperature_files": 89,
+        "acquisitions": 515,
+        "windows": 32
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC1",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 10251,
+        "vibration_files": 9047,
+        "temperature_files": 1204,
+        "acquisitions": 9047,
+        "windows": 0
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC2",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 5024,
+        "vibration_files": 4560,
+        "temperature_files": 464,
+        "acquisitions": 4560,
+        "windows": 0
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC3",
+        "split": "excluded",
+        "bearings": 1,
+        "files": 410,
+        "vibration_files": 352,
+        "temperature_files": 58,
+        "acquisitions": 352,
+        "windows": 0
+      }
+    ],
+    "fold_5": [
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC1",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 12404,
+        "vibration_files": 10973,
+        "temperature_files": 1431,
+        "acquisitions": 10973,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC2",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 6613,
+        "vibration_files": 5948,
+        "temperature_files": 665,
+        "acquisitions": 5948,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC3",
+        "split": "excluded",
+        "bearings": 1,
+        "files": 506,
+        "vibration_files": 434,
+        "temperature_files": 72,
+        "acquisitions": 434,
+        "windows": 0
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC1",
+        "split": "train",
+        "bearings": 2,
+        "files": 4284,
+        "vibration_files": 3674,
+        "temperature_files": 610,
+        "acquisitions": 3674,
+        "windows": 227
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC2",
+        "split": "train",
+        "bearings": 2,
+        "files": 1859,
+        "vibration_files": 1708,
+        "temperature_files": 151,
+        "acquisitions": 1708,
+        "windows": 103
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC3",
+        "split": "train",
+        "bearings": 1,
+        "files": 604,
+        "vibration_files": 515,
+        "temperature_files": 89,
+        "acquisitions": 515,
+        "windows": 31
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC3",
+        "split": "validation",
+        "bearings": 1,
+        "files": 1637,
+        "vibration_files": 1637,
+        "temperature_files": 0,
+        "acquisitions": 1637,
+        "windows": 102
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC1",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 10251,
+        "vibration_files": 9047,
+        "temperature_files": 1204,
+        "acquisitions": 9047,
+        "windows": 0
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC2",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 5024,
+        "vibration_files": 4560,
+        "temperature_files": 464,
+        "acquisitions": 4560,
+        "windows": 0
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC3",
+        "split": "excluded",
+        "bearings": 1,
+        "files": 410,
+        "vibration_files": 352,
+        "temperature_files": 58,
+        "acquisitions": 352,
+        "windows": 0
+      }
+    ],
+    "official": [
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC1",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 12404,
+        "vibration_files": 10973,
+        "temperature_files": 1431,
+        "acquisitions": 10973,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC2",
+        "split": "excluded",
+        "bearings": 5,
+        "files": 6613,
+        "vibration_files": 5948,
+        "temperature_files": 665,
+        "acquisitions": 5948,
+        "windows": 0
+      },
+      {
+        "subset": "Full_Test_Set",
+        "condition": "OC3",
+        "split": "excluded",
+        "bearings": 1,
+        "files": 506,
+        "vibration_files": 434,
+        "temperature_files": 72,
+        "acquisitions": 434,
+        "windows": 0
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC1",
+        "split": "train",
+        "bearings": 2,
+        "files": 4284,
+        "vibration_files": 3674,
+        "temperature_files": 610,
+        "acquisitions": 3674,
+        "windows": 227
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC2",
+        "split": "train",
+        "bearings": 2,
+        "files": 1859,
+        "vibration_files": 1708,
+        "temperature_files": 151,
+        "acquisitions": 1708,
+        "windows": 103
+      },
+      {
+        "subset": "Learning_set",
+        "condition": "OC3",
+        "split": "train",
+        "bearings": 2,
+        "files": 2241,
+        "vibration_files": 2152,
+        "temperature_files": 89,
+        "acquisitions": 2152,
+        "windows": 132
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC1",
+        "split": "test",
+        "bearings": 5,
+        "files": 10251,
+        "vibration_files": 9047,
+        "temperature_files": 1204,
+        "acquisitions": 9047,
+        "windows": 562
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC2",
+        "split": "test",
+        "bearings": 5,
+        "files": 5024,
+        "vibration_files": 4560,
+        "temperature_files": 464,
+        "acquisitions": 4560,
+        "windows": 283
+      },
+      {
+        "subset": "Test_set",
+        "condition": "OC3",
+        "split": "test",
+        "bearings": 1,
+        "files": 410,
+        "vibration_files": 352,
+        "temperature_files": 58,
+        "acquisitions": 352,
+        "windows": 21
+      }
+    ]
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "status": "PASS",
+  "full_pass": {
+    "train": {
+      "windows": 361,
+      "trace": {
+        "bearing_id": "Bearing3_1",
+        "raw_end_path": "Learning_set/Bearing3_1/acc_00400.csv",
+        "end_index": 400,
+        "end_timestamp": 37029.11879,
+        "rul_seconds": 1150.0,
+        "vibration_shape": [
+          32,
+          32,
+          2,
+          1024
+        ],
+        "temperature_shape": [
+          32,
+          32,
+          1,
+          64
+        ]
+      }
+    },
+    "validation": {
+      "windows": 102,
+      "trace": {
+        "bearing_id": "Bearing3_2",
+        "raw_end_path": "Learning_set/Bearing3_2/acc_00032.csv",
+        "end_index": 32,
+        "end_timestamp": 31191.97816,
+        "rul_seconds": 16050.0,
+        "vibration_shape": [
+          32,
+          32,
+          2,
+          1024
+        ],
+        "temperature_shape": [
+          32,
+          32,
+          1,
+          64
+        ]
+      }
+    }
+  },
+  "benchmarks": {
+    "train": {
+      "windows": 361,
+      "median_ms": 212.82029999997576,
+      "p95_ms": 293.20665499994897,
+      "samples_per_s": 142.42952174971552,
+      "batch_size": 32,
+      "num_workers": 0
+    },
+    "validation": {
+      "windows": 102,
+      "median_ms": 3.8646000000426284,
+      "p95_ms": 20.28834999998707,
+      "samples_per_s": 3219.900246198835,
+      "batch_size": 32,
+      "num_workers": 0
+    }
+  },
+  "counts": [
+    {
+      "subset": "Full_Test_Set",
+      "condition_id": "OC1",
+      "split": "excluded",
+      "bearing_count": 5,
+      "file_count": 12404,
+      "acc_file_count": 10973,
+      "temp_file_count": 1431,
+      "acquisition_count": 10973,
+      "window_count": 0
+    },
+    {
+      "subset": "Full_Test_Set",
+      "condition_id": "OC2",
+      "split": "excluded",
+      "bearing_count": 5,
+      "file_count": 6613,
+      "acc_file_count": 5948,
+      "temp_file_count": 665,
+      "acquisition_count": 5948,
+      "window_count": 0
+    },
+    {
+      "subset": "Full_Test_Set",
+      "condition_id": "OC3",
+      "split": "excluded",
+      "bearing_count": 1,
+      "file_count": 506,
+      "acc_file_count": 434,
+      "temp_file_count": 72,
+      "acquisition_count": 434,
+      "window_count": 0
+    },
+    {
+      "subset": "Learning_set",
+      "condition_id": "OC1",
+      "split": "train",
+      "bearing_count": 2,
+      "file_count": 4284,
+      "acc_file_count": 3674,
+      "temp_file_count": 610,
+      "acquisition_count": 3674,
+      "window_count": 227
+    },
+    {
+      "subset": "Learning_set",
+      "condition_id": "OC2",
+      "split": "train",
+      "bearing_count": 2,
+      "file_count": 1859,
+      "acc_file_count": 1708,
+      "temp_file_count": 151,
+      "acquisition_count": 1708,
+      "window_count": 103
+    },
+    {
+      "subset": "Learning_set",
+      "condition_id": "OC3",
+      "split": "train",
+      "bearing_count": 1,
+      "file_count": 604,
+      "acc_file_count": 515,
+      "temp_file_count": 89,
+      "acquisition_count": 515,
+      "window_count": 31
+    },
+    {
+      "subset": "Learning_set",
+      "condition_id": "OC3",
+      "split": "validation",
+      "bearing_count": 1,
+      "file_count": 1637,
+      "acc_file_count": 1637,
+      "temp_file_count": 0,
+      "acquisition_count": 1637,
+      "window_count": 102
+    },
+    {
+      "subset": "Test_set",
+      "condition_id": "OC1",
+      "split": "excluded",
+      "bearing_count": 5,
+      "file_count": 10251,
+      "acc_file_count": 9047,
+      "temp_file_count": 1204,
+      "acquisition_count": 9047,
+      "window_count": 0
+    },
+    {
+      "subset": "Test_set",
+      "condition_id": "OC2",
+      "split": "excluded",
+      "bearing_count": 5,
+      "file_count": 5024,
+      "acc_file_count": 4560,
+      "temp_file_count": 464,
+      "acquisition_count": 4560,
+      "window_count": 0
+    },
+    {
+      "subset": "Test_set",
+      "condition_id": "OC3",
+      "split": "excluded",
+      "bearing_count": 1,
+      "file_count": 410,
+      "acc_file_count": 352,
+      "temp_file_count": 58,
+      "acquisition_count": 352,
+      "window_count": 0
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive_name": "phm2012-master.zip",
+  "bytes": 763424596,
+  "sha256": "558876e6ea76a803265a744a94e67f67cad7a1ea2c799e6ec42665187e6789d1",
+  "zip_commit_comment": "129d43e0aa71e1da992bb4c0f69d54fd990c58cf",
+  "pin": "content hash AND commit comment"
+}

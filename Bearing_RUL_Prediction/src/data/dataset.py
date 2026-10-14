@@ -4,7 +4,12 @@ PyTorch Dataset and DataLoader for bearing RUL prediction.
 import torch
 from torch.utils.data import Dataset, DataLoader
 import numpy as np
-import os
+import os,sys
+
+
+CURRENT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.join(CURRENT,"..","..")
+sys.path.append(ROOT)
 
 class BearingDataset(Dataset):
     """

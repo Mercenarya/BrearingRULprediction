@@ -1,0 +1,188 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "benchmarks": {
+    "train": {
+      "windows": 431,
+      "batches": 14,
+      "batch_size": 32,
+      "median_ms": 213.86854999991556,
+      "p95_ms": 308.1495799999175,
+      "samples_per_s": 139.1505494977989,
+      "num_workers": 0
+    },
+    "validation": {
+      "windows": 32,
+      "batches": 1,
+      "batch_size": 32,
+      "median_ms": 9.900000000016007,
+      "p95_ms": 9.900000000016007,
+      "samples_per_s": 3232.323232318006,
+      "num_workers": 0
+    }
+  },
+  "counts_by_subset_condition_split": [
+    {
+      "subset": "Full_Test_Set",
+      "condition": "OC1",
+      "split": "excluded",
+      "bearings": 5,
+      "files": 12404,
+      "vibration_files": 10973,
+      "temperature_files": 1431,
+      "acquisitions": 10973,
+      "windows": 0
+    },
+    {
+      "subset": "Full_Test_Set",
+      "condition": "OC2",
+      "split": "excluded",
+      "bearings": 5,
+      "files": 6613,
+      "vibration_files": 5948,
+      "temperature_files": 665,
+      "acquisitions": 5948,
+      "windows": 0
+    },
+    {
+      "subset": "Full_Test_Set",
+      "condition": "OC3",
+      "split": "excluded",
+      "bearings": 1,
+      "files": 506,
+      "vibration_files": 434,
+      "temperature_files": 72,
+      "acquisitions": 434,
+      "windows": 0
+    },
+    {
+      "subset": "Learning_set",
+      "condition": "OC1",
+      "split": "train",
+      "bearings": 2,
+      "files": 4284,
+      "vibration_files": 3674,
+      "temperature_files": 610,
+      "acquisitions": 3674,
+      "windows": 227
+    },
+    {
+      "subset": "Learning_set",
+      "condition": "OC2",
+      "split": "train",
+      "bearings": 2,
+      "files": 1859,
+      "vibration_files": 1708,
+      "temperature_files": 151,
+      "acquisitions": 1708,
+      "windows": 103
+    },
+    {
+      "subset": "Learning_set",
+      "condition": "OC3",
+      "split": "train",
+      "bearings": 1,
+      "files": 1637,
+      "vibration_files": 1637,
+      "temperature_files": 0,
+      "acquisitions": 1637,
+      "windows": 101
+    },
+    {
+      "subset": "Learning_set",
+      "condition": "OC3",
+      "split": "validation",
+      "bearings": 1,
+      "files": 604,
+      "vibration_files": 515,
+      "temperature_files": 89,
+      "acquisitions": 515,
+      "windows": 32
+    },
+    {
+      "subset": "Test_set",
+      "condition": "OC1",
+      "split": "excluded",
+      "bearings": 5,
+      "files": 10251,
+      "vibration_files": 9047,
+      "temperature_files": 1204,
+      "acquisitions": 9047,
+      "windows": 0
+    },
+    {
+      "subset": "Test_set",
+      "condition": "OC2",
+      "split": "excluded",
+      "bearings": 5,
+      "files": 5024,
+      "vibration_files": 4560,
+      "temperature_files": 464,
+      "acquisitions": 4560,
+      "windows": 0
+    },
+    {
+      "subset": "Test_set",
+      "condition": "OC3",
+      "split": "excluded",
+      "bearings": 1,
+      "files": 410,
+      "vibration_files": 352,
+      "temperature_files": 58,
+      "acquisitions": 352,
+      "windows": 0
+    }
+  ],
+  "cache_identity_verified": true,
+  "tracing_examples": {
+    "train": {
+      "bearing_id": "Bearing1_2",
+      "raw_end_path": "Learning_set/Bearing1_2/acc_00496.csv",
+      "end_index": 496,
+      "end_timestamp": 36575.19691,
+      "rul_s": 3750.0,
+      "vibration_shape": [
+        32,
+        32,
+        2,
+        1024
+      ],
+      "temperature_shape": [
+        32,
+        32,
+        1,
+        64
+      ]
+    },
+    "validation": {
+      "bearing_id": "Bearing3_1",
+      "raw_end_path": "Learning_set/Bearing3_1/acc_00032.csv",
+      "end_index": 32,
+      "end_timestamp": 33349.11879,
+      "rul_s": 4830.0,
+      "vibration_shape": [
+        32,
+        32,
+        2,
+        1024
+      ],
+      "temperature_shape": [
+        32,
+        32,
+        1,
+        64
+      ]
+    }
+  },
+  "ram": {
+    "working_set_mb": 456.80078125,
+    "peak_working_set_mb": 554.359375
+  },
+  "machine": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "torch": "2.14.0+cpu"
+  }
+}

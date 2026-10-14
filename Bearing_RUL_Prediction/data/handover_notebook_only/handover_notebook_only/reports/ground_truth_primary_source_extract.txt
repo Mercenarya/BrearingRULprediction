@@ -1,0 +1,111 @@
+PAGE 5
+Figure 4: Measurement part: accelerometers and temperature sensor
+3 Experimental datasets for the IEEE PHM 2012 challenge
+3.1 Bearings degradation: run-to-failure experiments
+PRONOSTIA platform enables to perform run-to failure experiments. In order to avoid propa-
+gation of damages to the whole test bed (and for security reasons), tests were stopped when the
+amplitude of the vibration signal overpassed 20g.
+Figure 5 depicts an example of what one can observe on the ball bearing components before
+and after an experiment, as well as a vibration raw signal gathered during a whole experiment.
+Note that the degradation of bearings depict very dierent behaviors leading to very dierent
+experiment duration (until the fault).
+Figure 5: Normal and degraded bearings and vibration raw signal from an experiment
+3.2 Challenge datasets
+Regarding the PHM challenge, data representing 3 dierent loads were considered:
+- First operating conditions: 1800 rpm and 4000 N;
+- Second operating conditions: 1650 rpm and 4200 N;
+- Third operating conditions: 1500 rpm and 5000 N.
+Participants were provided with 6 run-to-failure datasets in order to build prognostics models,
+and were asked to estimate accurately the RUL of 11 remaining bearings (see Table 1). Vibration
+and temperature signals were gathered during all those experiments. Monitoring data of the 11
+test bearings were truncated so that participants were supposed to predict the remaining life,
+and thereby perform RUL estimates. Also, no assumption on the type of failure to be occurred
+was given (nothing known about the nature and the origin of the degradation: balls, inner or
+outer races, cage...).
+IEEE PHM 2012 Prognostic Challenge Page 5
+
+PAGE 6
+The learning set was quite small while the spread of the life duration of all bearings was very wide
+(from 1h to 7h). Performing good estimates was thereby dicult and this made the challenge
+more exciting.
+Datasets
+Operating Conditions
+Conditions 1 Conditions 2 Conditions 3
+Learning set Bearing1_1 Bearing2_1 Bearing3_1
+Bearing1_2 Bearing2_2 Bearing3_2
+T est set
+Bearing1_3 Bearing2_3 Bearing3_3
+Bearing1_4 Bearing2_4
+Bearing1_5 Bearing2_5
+Bearing1_6 Bearing2_6
+Bearing1_7 Bearing2_7
+Table 1: Datasets of IEEE 2012 PHM Prognostic Challenge
+Note 1. As for the challenge, RUL was dened as time to accelerometer exceeding 20g.
+Note 2. The theoretical models based on frequency signatures to detect bearings' faults (such
+as the inner and outer races and the cage faults) do not work. Indeed, frequency signatures are
+dicult to obtain due to the fact that the degradation may concern all the components of the
+test bearing at a same time.
+Note 3. Existing reliability laws for bearings' life duration, such as the L10, do not give same
+results than those obtained by the experiments (theoretical estimated life durations are dierent
+from those given by the experiments).
+Note 4. For more equity during the competition, no member from FEMTO-ST applied to the
+challenge.
+4 Organization of data
+4.1 Data acquisition characteristics
+Both learning and test datasets were given in 7z compressed folders. Each one contains vibra-
+tion ASCII les named acc_xxxxx.csv, and temperature ASCII les named temp_xxxxx.csv.
+The data acquisition parameters are given bellow and must be considered carefully.
+- Vibration signals (horizontal and vertical)
+- Sampling frequency: 25.6 kHz
+- Recordings: 2560 samples (i.e. 1/10 s) are recorded each 10 seconds (see Fig. 6)
+- T emperature signals
+- Sampling frequency: 10 Hz
+- Recordings: 600 samples are recorded each minute
+IEEE PHM 2012 Data challenge 
+10 s 
+time 1/10 s 
+recording phases with a 
+sample frequency of 25.6 kHz 
+Figure 6: Illustration of acquisition parameters for vibration signals
+IEEE PHM 2012 Prognostic Challenge Page 6
+
+PAGE 8
+5.2 Actual RULs to be estimated
+T est set Actual RUL
+Bearing1_3 5730 s
+Bearing1_4 339 s
+Bearing1_5 1610 s
+Bearing1_6 1460 s
+Bearing1_7 7570 s
+Bearing2_3 7530 s
+Bearing2_4 1390 s
+Bearing2_5 3090 s
+Bearing2_6 1290 s
+Bearing2_7 580 s
+Bearing3_3 820 s
+Table 3: Actual RULs to be estimated
+5.3 Top-scoring participants
+Thanks to all participants and congratulations to the winners.
+- Industrials
+ WINNER
+- A.L.D. Ltd. (Israel)
+- Contact: Sergey Porotsky (Chief Scientist) - Sergey.Porotsky@ald.co.il
+ RUNNER UP
+- GE Global Research (Niskayuna, NY)
+- Contact: Tianyi Wang (Information Scientist) - wangty98@gmail.com
+- Academics
+ WINNER
+- enter for advanced life cycle engineering (CALCE), University of Maryland
+- Contact: Arvind Sai Sarathi Vasan (PhD student) - arvind88@umd.edu
+ RUNNER UP
+- Joef Stefan Institute (Slovenia)
+- Contact: Matej Gaperin (PhD student) - matej.gasperin@ijs.si
+6 Contact point
+For any request please contact the local organizing committee (Rafael Gouriveau, Kamran Javed,
+Kamal Medjaher, Ahmed Mosallam, Patrick Nectoux, Emmanuel Ramasso, Noureddine Zer-
+houni) at:
+ieee-2012-PHM-challenge@femto-st.fr
+FEMTO-ST Institute
+UMR CNRS 6174 - UFC / ENSMM / UTBM
+24 rue Alain Savary, 25000 Besançon, France
+IEEE PHM 2012 Prognostic Challenge Page 8

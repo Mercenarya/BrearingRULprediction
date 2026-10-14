@@ -1,0 +1,143 @@
+{
+  "notebooks": [
+    "C:\\Users\\ACER\\Downloads\\Bearing_RUL_Prediction\\src\\data\\data_process.ipynb",
+    "C:\\Users\\ACER\\Downloads\\Bearing_RUL_Prediction\\scripts\\data_pipeline_scripts.ipynb"
+  ],
+  "modules": [
+    {
+      "source": "src/data/__init__.py",
+      "code_cells": 2,
+      "markdown_cells": 4
+    },
+    {
+      "source": "src/data/schemas.py",
+      "code_cells": 7,
+      "markdown_cells": 9
+    },
+    {
+      "source": "src/data/parsers.py",
+      "code_cells": 6,
+      "markdown_cells": 8
+    },
+    {
+      "source": "src/data/alignment.py",
+      "code_cells": 4,
+      "markdown_cells": 6
+    },
+    {
+      "source": "src/data/labeling.py",
+      "code_cells": 4,
+      "markdown_cells": 6
+    },
+    {
+      "source": "src/data/splitting.py",
+      "code_cells": 5,
+      "markdown_cells": 7
+    },
+    {
+      "source": "src/data/windowing.py",
+      "code_cells": 4,
+      "markdown_cells": 6
+    },
+    {
+      "source": "src/data/scaling.py",
+      "code_cells": 6,
+      "markdown_cells": 8
+    },
+    {
+      "source": "src/data/vibration.py",
+      "code_cells": 4,
+      "markdown_cells": 6
+    },
+    {
+      "source": "src/data/temperature.py",
+      "code_cells": 4,
+      "markdown_cells": 6
+    },
+    {
+      "source": "src/data/inventory.py",
+      "code_cells": 6,
+      "markdown_cells": 8
+    },
+    {
+      "source": "src/data/identity.py",
+      "code_cells": 5,
+      "markdown_cells": 7
+    },
+    {
+      "source": "src/data/dataset.py",
+      "code_cells": 9,
+      "markdown_cells": 11
+    },
+    {
+      "source": "src/data/cache.py",
+      "code_cells": 4,
+      "markdown_cells": 6
+    },
+    {
+      "source": "src/data/validation.py",
+      "code_cells": 4,
+      "markdown_cells": 6
+    },
+    {
+      "source": "src/data/download.py",
+      "code_cells": 5,
+      "markdown_cells": 7
+    },
+    {
+      "source": "src/data/labels.py",
+      "code_cells": 8,
+      "markdown_cells": 10
+    },
+    {
+      "source": "src/data/preprocessing.py",
+      "code_cells": 8,
+      "markdown_cells": 10
+    },
+    {
+      "source": "src/data/sliding_window.py",
+      "code_cells": 6,
+      "markdown_cells": 8
+    },
+    {
+      "source": "scripts/build_cache.py",
+      "code_cells": 5,
+      "markdown_cells": 7
+    },
+    {
+      "source": "scripts/build_manifest.py",
+      "code_cells": 5,
+      "markdown_cells": 7
+    },
+    {
+      "source": "scripts/download_pronostia.py",
+      "code_cells": 5,
+      "markdown_cells": 7
+    },
+    {
+      "source": "scripts/inventory_xjtu.py",
+      "code_cells": 5,
+      "markdown_cells": 7
+    },
+    {
+      "source": "scripts/plot_preprocessing.py",
+      "code_cells": 5,
+      "markdown_cells": 7
+    },
+    {
+      "source": "scripts/report_completion.py",
+      "code_cells": 8,
+      "markdown_cells": 10
+    },
+    {
+      "source": "scripts/validate_data.py",
+      "code_cells": 4,
+      "markdown_cells": 5
+    },
+    {
+      "source": "scripts/write_handover.py",
+      "code_cells": 6,
+      "markdown_cells": 8
+    }
+  ]
+}

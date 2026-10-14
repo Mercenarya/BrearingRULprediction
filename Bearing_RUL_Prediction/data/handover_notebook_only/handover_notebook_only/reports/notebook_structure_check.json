@@ -1,0 +1,16 @@
+[
+  {
+    "notebook": "data_process.ipynb",
+    "markdown_before_every_code_cell": true,
+    "valid_python_ast": true,
+    "legacy_magic_or_project_import": false,
+    "code_cells": 91
+  },
+  {
+    "notebook": "data_pipeline_scripts.ipynb",
+    "markdown_before_every_code_cell": true,
+    "valid_python_ast": true,
+    "legacy_magic_or_project_import": false,
+    "code_cells": 84
+  }
+]

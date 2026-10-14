@@ -10,9 +10,11 @@ import os
 # Add src to path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from models.cnn_encoder import VibrationEncoder, TemperatureEncoder
-from models.cross_modal_attention import CrossModalAttention, FusionStrategy
-from models.temporal import DualPathLSTM
+from models.vibration_encoder import VibrationEncoder
+from models.temperature_encoder import TemperatureEncoder
+from models.cross_attention import CrossModalAttention
+from models.scale_fusion import ScaleFusion
+from models.temporal import DualPathTemporalEncoder
 from models.regression_head import RegressionHead
 from models.rul_model import RULModel
 

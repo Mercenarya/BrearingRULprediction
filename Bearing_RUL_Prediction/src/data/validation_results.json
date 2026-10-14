@@ -1,0 +1,56 @@
+{
+  "test.npz": {
+    "valid": true,
+    "errors": [],
+    "sha256": "9eefeae21a41b26164f601caaffcd698c40f6bb12e0d279b02581f7af1b891da",
+    "size_bytes": 141559059
+  },
+  "test_pronostia.npz": {
+    "valid": true,
+    "errors": [],
+    "sha256": "9eefeae21a41b26164f601caaffcd698c40f6bb12e0d279b02581f7af1b891da",
+    "size_bytes": 141559059
+  },
+  "test_xjtusy.npz": {
+    "valid": true,
+    "errors": [],
+    "sha256": "344d7235491a2001f03db3c61d7c0b916c931ee4c940aa5fd8f946b0d60d332a",
+    "size_bytes": 56050342
+  },
+  "train.npz": {
+    "valid": true,
+    "errors": [],
+    "sha256": "8f3520b0e87826addb2a921e312a25e8e7cd9c5722236514f3a71c89d58d6291",
+    "size_bytes": 97882113
+  },
+  "train_pronostia.npz": {
+    "valid": true,
+    "errors": [],
+    "sha256": "8f3520b0e87826addb2a921e312a25e8e7cd9c5722236514f3a71c89d58d6291",
+    "size_bytes": 97882113
+  },
+  "train_xjtusy.npz": {
+    "valid": true,
+    "errors": [],
+    "sha256": "0dee798af3a0f58cff725f83fc345421e5554911fb610cad6603c7a8ca7ca943",
+    "size_bytes": 94383445
+  },
+  "val.npz": {
+    "valid": true,
+    "errors": [],
+    "sha256": "bfeea6c1cb2ba869a06a74acf0ae1ac2953b0764a2c0c98ed5e782e61bc5e5cf",
+    "size_bytes": 83419760
+  },
+  "val_pronostia.npz": {
+    "valid": true,
+    "errors": [],
+    "sha256": "bfeea6c1cb2ba869a06a74acf0ae1ac2953b0764a2c0c98ed5e782e61bc5e5cf",
+    "size_bytes": 83419760
+  },
+  "val_xjtusy.npz": {
+    "valid": true,
+    "errors": [],
+    "sha256": "17107ba4e290ac6a8c4d034c40dde861765f9cb36ca18341971a38ed698a7eb9",
+    "size_bytes": 38822094
+  }
+}

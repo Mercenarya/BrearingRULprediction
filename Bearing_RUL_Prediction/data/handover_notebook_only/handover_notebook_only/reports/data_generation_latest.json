@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-10-06T17:50:23",
+  "output_root": "C:\\Users\\ACER\\Downloads\\Bearing_RUL_Prediction\\artifacts\\pronostia_feedback_clean_20261006_174357",
+  "raw_root": "C:\\Users\\ACER\\Downloads\\PHM_2012_Raw\\ieee-phm-2012-data-challenge-dataset-master",
+  "rebuilt": true,
+  "total_bytes": 807636654,
+  "file_count": 123,
+  "npz_file_count": 70,
+  "bearing_acquisition_shards": 17,
+  "tests": 38,
+  "fold_counts": [
+    {
+      "fold": "0",
+      "split": "train",
+      "windows": 288
+    },
+    {
+      "fold": "0",
+      "split": "validation",
+      "windows": 175
+    },
+    {
+      "fold": "1",
+      "split": "train",
+      "windows": 409
+    },
+    {
+      "fold": "1",
+      "split": "validation",
+      "windows": 54
+    },
+    {
+      "fold": "2",
+      "split": "train",
+      "windows": 407
+    },
+    {
+      "fold": "2",
+      "split": "validation",
+      "windows": 56
+    },
+    {
+      "fold": "3",
+      "split": "train",
+      "windows": 414
+    },
+    {
+      "fold": "3",
+      "split": "validation",
+      "windows": 49
+    },
+    {
+      "fold": "4",
+      "split": "train",
+      "windows": 431
+    },
+    {
+      "fold": "4",
+      "split": "validation",
+      "windows": 32
+    },
+    {
+      "fold": "5",
+      "split": "train",
+      "windows": 361
+    },
+    {
+      "fold": "5",
+      "split": "validation",
+      "windows": 102
+    },
+    {
+      "fold": "official",
+      "split": "train",
+      "windows": 462
+    },
+    {
+      "fold": "official",
+      "split": "test",
+      "windows": 866
+    }
+  ],
+  "official_train_batch_trace": {
+    "bearing_id": "Bearing1_1",
+    "raw_end_path": "Learning_set/Bearing1_1/acc_02112.csv",
+    "end_index": 2112,
+    "end_timestamp": 55889.065664,
+    "rul_seconds": 6910.0,
+    "vibration_shape": [
+      32,
+      32,
+      2,
+      1024
+    ],
+    "temperature_shape": [
+      32,
+      32,
+      1,
+      64
+    ]
+  },
+  "sample_shard_shapes": {
+    "vibration": [
+      2803,
+      2,
+      1024
+    ],
+    "temperature": [
+      2803,
+      1,
+      64
+    ],
+    "temperature_mask": [
+      2803,
+      1,
+      64
+    ],
+    "rul": [
+      2803
+    ]
+  },
+  "official_benchmark_ground_truth_ready": false
+}

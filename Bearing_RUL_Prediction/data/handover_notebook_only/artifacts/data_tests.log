@@ -1,0 +1,77 @@
+test_causal_temperature_and_missing_mask (test_pronostia_pipeline.ContractTests.test_causal_temperature_and_missing_mask) ... ok
+test_filter_shapes_determinism_and_alias_rejection (test_pronostia_pipeline.ContractTests.test_filter_shapes_determinism_and_alias_rejection) ... ok
+test_labels_debug_and_cut (test_pronostia_pipeline.ContractTests.test_labels_debug_and_cut) ... ok
+test_real_temperature_history (test_pronostia_pipeline.ContractTests.test_real_temperature_history) ... ok
+test_split_leakage_rejected (test_pronostia_pipeline.ContractTests.test_split_leakage_rejected) ... ok
+test_train_scaler_is_independent_of_test (test_pronostia_pipeline.ContractTests.test_train_scaler_is_independent_of_test) ... ok
+test_window_counts_and_gaps (test_pronostia_pipeline.ContractTests.test_window_counts_and_gaps) ... ok
+Prepared Learning_set/Bearing1_1: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing1_2: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing2_1: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing2_2: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing3_1: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing3_2: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_3: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_4: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_5: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_6: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_7: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_3: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_4: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_5: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_6: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_7: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing3_3: 5 acquisitions, temperature missing 100.00%
+Exported fold_0: 7 windows
+Exported official: 28 windows
+Validated fold_0: PASS
+Validated official: PASS
+Prepared Learning_set/Bearing1_1: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing1_2: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing2_1: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing2_2: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing3_1: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing3_2: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_3: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_4: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_5: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_6: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_7: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_3: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_4: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_5: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_6: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_7: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing3_3: 5 acquisitions, temperature missing 100.00%
+Exported fold_0: 7 windows
+Exported official: 28 windows
+test_all_bearings_raw_to_cache_and_debug_labels (test_pronostia_pipeline.IntegrationTests.test_all_bearings_raw_to_cache_and_debug_labels) ... ok
+test_acc_microsecond_schema (test_pronostia_pipeline.ParserTests.test_acc_microsecond_schema) ... ok
+test_bad_inputs (test_pronostia_pipeline.ParserTests.test_bad_inputs) ... ok
+test_delimiters_headers_and_clock_units (test_pronostia_pipeline.ParserTests.test_delimiters_headers_and_clock_units) ... ok
+test_fraction_rollover_is_valid (test_pronostia_pipeline.ParserTests.test_fraction_rollover_is_valid) ... ok
+Scanning Learning_set/Bearing1_1
+test_inventory_reports_quarantine_and_missing_indices (test_pronostia_pipeline.ParserTests.test_inventory_reports_quarantine_and_missing_indices) ... ok
+test_natural_sort_and_midnight (test_pronostia_pipeline.ParserTests.test_natural_sort_and_midnight) ... ok
+test_non_increasing_timestamp (test_pronostia_pipeline.ParserTests.test_non_increasing_timestamp) ... ok
+test_verified_clock_repair_and_unbounded_rejection (test_pronostia_pipeline.ParserTests.test_verified_clock_repair_and_unbounded_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 5.239s
+
+OK
+test_dataset_getitem (test_dataset.TestBearingDataset.test_dataset_getitem)
+Test that getitem returns correct data types and shapes. ... ok
+test_dataset_indexing_bounds (test_dataset.TestBearingDataset.test_dataset_indexing_bounds)
+Test that indexing respects bounds. ... ok
+test_dataset_length (test_dataset.TestBearingDataset.test_dataset_length)
+Test that dataset length matches number of samples. ... ok
+test_create_data_loaders (test_dataset.TestDataLoaders.test_create_data_loaders)
+Test that data loaders are created correctly. ... ok
+test_data_loader_iteration (test_dataset.TestDataLoaders.test_data_loader_iteration)
+Test that we can iterate through data loaders and get correct batch shapes. ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.114s
+
+OK

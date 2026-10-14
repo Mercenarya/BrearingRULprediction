@@ -1,0 +1,179 @@
+{
+  "status": "PASS",
+  "full_pass": {
+    "train": {
+      "windows": 431,
+      "trace": {
+        "bearing_id": "Bearing1_2",
+        "raw_end_path": "Learning_set/Bearing1_2/acc_00496.csv",
+        "end_index": 496,
+        "end_timestamp": 36575.19691,
+        "rul_seconds": 3750.0,
+        "vibration_shape": [
+          32,
+          32,
+          2,
+          1024
+        ],
+        "temperature_shape": [
+          32,
+          32,
+          1,
+          64
+        ]
+      }
+    },
+    "validation": {
+      "windows": 32,
+      "trace": {
+        "bearing_id": "Bearing3_1",
+        "raw_end_path": "Learning_set/Bearing3_1/acc_00032.csv",
+        "end_index": 32,
+        "end_timestamp": 33349.11879,
+        "rul_seconds": 4830.0,
+        "vibration_shape": [
+          32,
+          32,
+          2,
+          1024
+        ],
+        "temperature_shape": [
+          32,
+          32,
+          1,
+          64
+        ]
+      }
+    }
+  },
+  "benchmarks": {
+    "train": {
+      "windows": 431,
+      "median_ms": 261.96699999991324,
+      "p95_ms": 359.95067999997445,
+      "samples_per_s": 114.97447273269377,
+      "batch_size": 32,
+      "num_workers": 0
+    },
+    "validation": {
+      "windows": 32,
+      "median_ms": 10.446399999636924,
+      "p95_ms": 10.446399999636924,
+      "samples_per_s": 3063.2562414910585,
+      "batch_size": 32,
+      "num_workers": 0
+    }
+  },
+  "counts": [
+    {
+      "subset": "Full_Test_Set",
+      "condition_id": "OC1",
+      "split": "excluded",
+      "bearing_count": 5,
+      "file_count": 12404,
+      "acc_file_count": 10973,
+      "temp_file_count": 1431,
+      "acquisition_count": 10973,
+      "window_count": 0
+    },
+    {
+      "subset": "Full_Test_Set",
+      "condition_id": "OC2",
+      "split": "excluded",
+      "bearing_count": 5,
+      "file_count": 6613,
+      "acc_file_count": 5948,
+      "temp_file_count": 665,
+      "acquisition_count": 5948,
+      "window_count": 0
+    },
+    {
+      "subset": "Full_Test_Set",
+      "condition_id": "OC3",
+      "split": "excluded",
+      "bearing_count": 1,
+      "file_count": 506,
+      "acc_file_count": 434,
+      "temp_file_count": 72,
+      "acquisition_count": 434,
+      "window_count": 0
+    },
+    {
+      "subset": "Learning_set",
+      "condition_id": "OC1",
+      "split": "train",
+      "bearing_count": 2,
+      "file_count": 4284,
+      "acc_file_count": 3674,
+      "temp_file_count": 610,
+      "acquisition_count": 3674,
+      "window_count": 227
+    },
+    {
+      "subset": "Learning_set",
+      "condition_id": "OC2",
+      "split": "train",
+      "bearing_count": 2,
+      "file_count": 1859,
+      "acc_file_count": 1708,
+      "temp_file_count": 151,
+      "acquisition_count": 1708,
+      "window_count": 103
+    },
+    {
+      "subset": "Learning_set",
+      "condition_id": "OC3",
+      "split": "train",
+      "bearing_count": 1,
+      "file_count": 1637,
+      "acc_file_count": 1637,
+      "temp_file_count": 0,
+      "acquisition_count": 1637,
+      "window_count": 101
+    },
+    {
+      "subset": "Learning_set",
+      "condition_id": "OC3",
+      "split": "validation",
+      "bearing_count": 1,
+      "file_count": 604,
+      "acc_file_count": 515,
+      "temp_file_count": 89,
+      "acquisition_count": 515,
+      "window_count": 32
+    },
+    {
+      "subset": "Test_set",
+      "condition_id": "OC1",
+      "split": "excluded",
+      "bearing_count": 5,
+      "file_count": 10251,
+      "acc_file_count": 9047,
+      "temp_file_count": 1204,
+      "acquisition_count": 9047,
+      "window_count": 0
+    },
+    {
+      "subset": "Test_set",
+      "condition_id": "OC2",
+      "split": "excluded",
+      "bearing_count": 5,
+      "file_count": 5024,
+      "acc_file_count": 4560,
+      "temp_file_count": 464,
+      "acquisition_count": 4560,
+      "window_count": 0
+    },
+    {
+      "subset": "Test_set",
+      "condition_id": "OC3",
+      "split": "excluded",
+      "bearing_count": 1,
+      "file_count": 410,
+      "acc_file_count": 352,
+      "temp_file_count": 58,
+      "acquisition_count": 352,
+      "window_count": 0
+    }
+  ]
+}

@@ -56,8 +56,8 @@ def calculate_phm_score(y_true, y_pred):
         float: PHM Score
     """
     # Convert to numpy arrays if needed
-    y_true = np.asarray(y_true)
-    y_pred = np.asarray(y_pred)
+    y_true = np.asarray(y_true).ravel()
+    y_pred = np.asarray(y_pred).ravel()
 
     # Calculate errors
     errors = y_pred - y_true

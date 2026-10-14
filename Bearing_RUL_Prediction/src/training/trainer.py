@@ -10,7 +10,6 @@ sys.path.append(ROOT)
 import torch
 import numpy as np
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-import wandb
 from tqdm import tqdm
 from src.evaluation.metrics import calculate_phm_score
 
@@ -20,8 +19,7 @@ class Trainer:
     """
 
     def __init__(self, model, criterion, optimizer, scheduler=None, device='cuda',
-                 early_stopping_patience=10, checkpoint_dir='checkpoints',
-                 use_wandb=False):
+                 early_stopping_patience=10, checkpoint_dir='checkpoints'):
         """
         Initialize the Trainer.
 
@@ -33,7 +31,6 @@ class Trainer:
             device (str): Device to use for training ('cpu' or 'cuda')
             early_stopping_patience (int): Number of epochs to wait for improvement
             checkpoint_dir (str): Directory to save checkpoints
-            use_wandb (bool): Whether to log to Weights & Biases
         """
         self.model = model
         self.criterion = criterion
@@ -42,7 +39,6 @@ class Trainer:
         self.device = device
         self.early_stopping_patience = early_stopping_patience
         self.checkpoint_dir = checkpoint_dir
-        self.use_wandb = use_wandb
 
         # Create checkpoint directory if it doesn't exist
         os.makedirs(self.checkpoint_dir, exist_ok=True)
@@ -229,17 +225,6 @@ class Trainer:
             if self.scheduler is not None:
                 self.scheduler.step(val_loss)
 
-            # Logging
-            if self.use_wandb:
-                wandb.log({
-                    'epoch': epoch,
-                    'train_loss': train_loss,
-                    'val_loss': val_loss,
-                    'val_mae': val_metrics['mae'],
-                    'val_rmse': val_metrics['rmse'],
-                    'val_r2': val_metrics['r2'],
-                    'val_phm_score': val_metrics['phm_score']
-                })
 
             # Print progress
             print(f"Epoch {epoch+1}/{num_epochs}: "

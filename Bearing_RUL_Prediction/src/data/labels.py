@@ -3,6 +3,7 @@ Calculate RUL labels and normalize according to max_RUL.
 """
 import numpy as np
 
+# hàm tính toán phạt (thời gian hạot động, thời gian hiện tại)
 def calculate_rul_from_failure(lifetimes, current_time):
     """
     Calculate Remaining Useful Life based on failure times.
@@ -16,6 +17,8 @@ def calculate_rul_from_failure(lifetimes, current_time):
     """
     return np.maximum(0, lifetimes - current_time)
 
+
+# chuẩn hoá giá trị được nhập vào
 def normalize_rul(rul_values, max_rul=None):
     """
     Normalize RUL values by dividing by max_RUL.

@@ -1,0 +1,38 @@
+{
+  "train_bearings": [
+    "Bearing1_1",
+    "Bearing1_2",
+    "Bearing2_2",
+    "Bearing3_1",
+    "Bearing3_2"
+  ],
+  "config_hash": "dd177f5bb6408e51447fd69cfa33ccc5d073d200c17706fc45a7b46d64f78300",
+  "split_hash": "e5ccae11fc76938f0e052dbdf9f603c1c80e0f2e53bc95686998795187d8615f",
+  "epsilon": 1e-06,
+  "vibration": {
+    "count": [
+      6781952,
+      6781952
+    ],
+    "mean": [
+      1.643061609964743e-06,
+      -2.7399954914401217e-07
+    ],
+    "std": [
+      0.6019719126714229,
+      0.3087358618446297
+    ]
+  },
+  "temperature": {
+    "count": [
+      266194
+    ],
+    "mean": [
+      114.64790486653513
+    ],
+    "std": [
+      16.69433746893336
+    ]
+  },
+  "hash": "d9d76527e218a7ab29a8b52347783e8d65cdcf8100b2b515f0a1ff09ff04ae79"
+}

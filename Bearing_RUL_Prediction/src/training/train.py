@@ -10,11 +10,7 @@ sys.path.append(ROOT)
 import yaml
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader
-import numpy as np
-from tqdm import tqdm
-import wandb
-from src.data.dataset import BearingDataset, create_data_loaders
+from src.data.dataset import create_data_loaders
 from src.models.rul_model import RULModel
 from src.losses.stage_aware_loss import StageAwarePHMLoss
 from src.training.trainer import Trainer
@@ -97,12 +93,6 @@ def main():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"Using device: {device}")
 
-    # Setup Weights & Biases logging
-    if config.get('logging', {}).get('use_wandb', False):
-        wandb.init(
-            project=config['logging'].get('project_name', 'bearing_rul_prediction'),
-            config=config
-        )
 
     # Create data loaders
     train_loader, val_loader, test_loader = create_data_loaders(
@@ -124,11 +114,12 @@ def main():
     # Setup optimizer
     optimizer_name = config['training'].get('optimizer', 'adam')
     learning_rate = config['training']['learning_rate']
+    weight_decay = config['training'].get('weight_decay', 0.0)
 
     if optimizer_name.lower() == 'adam':
-        optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+        optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, weight_decay=weight_decay)
     elif optimizer_name.lower() == 'sgd':
-        optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, momentum=0.9)
+        optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, momentum=0.9, weight_decay=weight_decay)
     else:
         raise ValueError(f"Unsupported optimizer: {optimizer_name}")
 
@@ -145,8 +136,7 @@ def main():
         scheduler=scheduler,
         device=device,
         early_stopping_patience=config['training'].get('early_stopping_patience', 10),
-        checkpoint_dir=os.path.join('checkpoints'),
-        use_wandb=config.get('logging', {}).get('use_wandb', False)
+        checkpoint_dir=os.path.join('checkpoints')
     )
 
     # Train model
@@ -163,9 +153,6 @@ def main():
     print(f"Test Loss: {test_loss:.4f}")
     print(f"Test Metrics: {test_metrics}")
 
-    # Finish wandb run
-    if config.get('logging', {}).get('use_wandb', False):
-        wandb.finish()
 
 if __name__ == "__main__":
     main()

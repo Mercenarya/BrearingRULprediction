@@ -1,0 +1,168 @@
+{
+  "status": "PASS",
+  "full_pass": {
+    "train": {
+      "windows": 462,
+      "trace": {
+        "bearing_id": "Bearing1_1",
+        "raw_end_path": "Learning_set/Bearing1_1/acc_02112.csv",
+        "end_index": 2112,
+        "end_timestamp": 55889.065664,
+        "rul_seconds": 6910.0,
+        "vibration_shape": [
+          32,
+          32,
+          2,
+          1024
+        ],
+        "temperature_shape": [
+          32,
+          32,
+          1,
+          64
+        ]
+      }
+    },
+    "test": {
+      "windows": 866,
+      "trace": {
+        "bearing_id": "Bearing1_3",
+        "raw_end_path": "Test_set/Bearing1_3/acc_00032.csv",
+        "end_index": 32,
+        "end_timestamp": 31091.37816,
+        "rul_seconds": 23430.0,
+        "vibration_shape": [
+          32,
+          32,
+          2,
+          1024
+        ],
+        "temperature_shape": [
+          32,
+          32,
+          1,
+          64
+        ]
+      }
+    }
+  },
+  "benchmarks": {
+    "train": {
+      "windows": 462,
+      "median_ms": 264.73519999944983,
+      "p95_ms": 333.22234999986904,
+      "samples_per_s": 119.96646236281556,
+      "batch_size": 32,
+      "num_workers": 0
+    },
+    "test": {
+      "windows": 866,
+      "median_ms": 3.766900000300666,
+      "p95_ms": 29.025664999926448,
+      "samples_per_s": 3397.9213039705987,
+      "batch_size": 32,
+      "num_workers": 0
+    }
+  },
+  "counts": [
+    {
+      "subset": "Full_Test_Set",
+      "condition_id": "OC1",
+      "split": "excluded",
+      "bearing_count": 5,
+      "file_count": 12404,
+      "acc_file_count": 10973,
+      "temp_file_count": 1431,
+      "acquisition_count": 10973,
+      "window_count": 0
+    },
+    {
+      "subset": "Full_Test_Set",
+      "condition_id": "OC2",
+      "split": "excluded",
+      "bearing_count": 5,
+      "file_count": 6613,
+      "acc_file_count": 5948,
+      "temp_file_count": 665,
+      "acquisition_count": 5948,
+      "window_count": 0
+    },
+    {
+      "subset": "Full_Test_Set",
+      "condition_id": "OC3",
+      "split": "excluded",
+      "bearing_count": 1,
+      "file_count": 506,
+      "acc_file_count": 434,
+      "temp_file_count": 72,
+      "acquisition_count": 434,
+      "window_count": 0
+    },
+    {
+      "subset": "Learning_set",
+      "condition_id": "OC1",
+      "split": "train",
+      "bearing_count": 2,
+      "file_count": 4284,
+      "acc_file_count": 3674,
+      "temp_file_count": 610,
+      "acquisition_count": 3674,
+      "window_count": 227
+    },
+    {
+      "subset": "Learning_set",
+      "condition_id": "OC2",
+      "split": "train",
+      "bearing_count": 2,
+      "file_count": 1859,
+      "acc_file_count": 1708,
+      "temp_file_count": 151,
+      "acquisition_count": 1708,
+      "window_count": 103
+    },
+    {
+      "subset": "Learning_set",
+      "condition_id": "OC3",
+      "split": "train",
+      "bearing_count": 2,
+      "file_count": 2241,
+      "acc_file_count": 2152,
+      "temp_file_count": 89,
+      "acquisition_count": 2152,
+      "window_count": 132
+    },
+    {
+      "subset": "Test_set",
+      "condition_id": "OC1",
+      "split": "test",
+      "bearing_count": 5,
+      "file_count": 10251,
+      "acc_file_count": 9047,
+      "temp_file_count": 1204,
+      "acquisition_count": 9047,
+      "window_count": 562
+    },
+    {
+      "subset": "Test_set",
+      "condition_id": "OC2",
+      "split": "test",
+      "bearing_count": 5,
+      "file_count": 5024,
+      "acc_file_count": 4560,
+      "temp_file_count": 464,
+      "acquisition_count": 4560,
+      "window_count": 283
+    },
+    {
+      "subset": "Test_set",
+      "condition_id": "OC3",
+      "split": "test",
+      "bearing_count": 1,
+      "file_count": 410,
+      "acc_file_count": 352,
+      "temp_file_count": 58,
+      "acquisition_count": 352,
+      "window_count": 21
+    }
+  ]
+}

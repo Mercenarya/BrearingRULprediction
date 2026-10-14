@@ -1,0 +1,19 @@
+{
+  "clean_notebook_directory": "C:\\Users\\ACER\\Downloads\\Bearing_RUL_Prediction\\.tmp\\notebook_only_clean_20261006_174357",
+  "contains_python_source_files": false,
+  "output_root": "C:\\Users\\ACER\\Downloads\\Bearing_RUL_Prediction\\artifacts\\pronostia_feedback_clean_20261006_174357",
+  "notebooks": [
+    {
+      "notebook": "data_process.ipynb",
+      "status": "PASS",
+      "code_cells": 91,
+      "fresh_kernel": true
+    },
+    {
+      "notebook": "data_pipeline_scripts.ipynb",
+      "status": "PASS",
+      "code_cells": 84,
+      "fresh_kernel": true
+    }
+  ]
+}

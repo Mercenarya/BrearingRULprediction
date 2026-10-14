@@ -1,82 +1,63 @@
 """
-Regression Head: Fully connected network for RUL prediction.
-Architecture: FC 192→128→64→1
+Regression head for RUL prediction.
 """
 import torch
 import torch.nn as nn
+from .common import BaseModel
+from .config import ModelConfig
 
-class RegressionHead(nn.Module):
+
+class RegressionHead(BaseModel):
     """
-    Regression head for predicting RUL from extracted features.
+    Regression head that maps temporal embedding to RUL prediction.
+
+    Structure:
+        -> Linear
+        -> activation
+        -> dropout
+        -> Linear
+        -> Softplus (if non_negative=True) or Identity (if non_negative=False)
+        -> RUL [B, 1]
     """
 
-    def __init__(self, input_size=192, hidden_sizes=[128, 64], output_size=1,
-                 dropout_rate=0.3):
-        """
-        Initialize the Regression Head.
+    def __init__(self, config: ModelConfig):
+        super().__init__(config)
+        self.input_size = config.d_model  # We expect input to be d_model
+        self.hidden_sizes = config.regression_hidden
+        self.dropout_rate = config.regression_dropout
+        self.non_negative = config.non_negative
 
-        Args:
-            input_size (int): Size of input features
-            hidden_sizes (list): Sizes of hidden layers [128, 64]
-            output_size (int): Size of output (1 for RUL regression)
-            dropout_rate (float): Dropout rate between layers
-        """
-        super(RegressionHead, self).__init__()
-
+        # Build the hidden layers
         layers = []
-        prev_size = input_size
-
-        # Hidden layers
-        for hidden_size in hidden_sizes:
-            layers.extend([
-                nn.Linear(prev_size, hidden_size),
-                nn.BatchNorm1d(hidden_size),
-                nn.ReLU(inplace=True),
-                nn.Dropout(dropout_rate)
-            ])
-            prev_size = hidden_size
+        in_size = self.input_size
+        for hidden_size in self.hidden_sizes:
+            layers.append(nn.Linear(in_size, hidden_size))
+            layers.append(nn.ReLU())  # We can make this configurable, but ReLU is common
+            layers.append(nn.Dropout(self.dropout_rate))
+            in_size = hidden_size
+        self.hidden_layers = nn.Sequential(*layers)
 
         # Output layer
-        layers.append(nn.Linear(prev_size, output_size))
+        self.output_layer = nn.Linear(in_size, 1)
 
-        self.network = nn.Sequential(*layers)
-
-    def forward(self, x):
-        """
-        Forward pass through the regression head.
-
-        Args:
-            x (torch.Tensor): Input features of shape (batch_size, input_size)
-                             or (batch_size, seq_len, input_size) for temporal data
-
-        Returns:
-            torch.Tensor: Predicted RUL values of shape (batch_size, output_size)
-                         or (batch_size, seq_len, output_size) for temporal data
-        """
-        # Handle temporal data by applying to each time step
-        original_shape = x.shape
-        if len(original_shape) == 3:
-            batch_size, seq_len, feature_size = original_shape
-            x = x.view(-1, feature_size)  # (batch_size * seq_len, input_size)
-            output = self.network(x)
-            output = output.view(batch_size, seq_len, -1)  # (batch_size, seq_len, output_size)
+        # Output activation
+        if self.non_negative:
+            self.output_activation = nn.Softplus()
         else:
-            output = self.network(x)
+            self.output_activation = nn.Identity()
 
-        return output
-
-    def predict_rul(self, features):
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
         """
-        Predict RUL from features (convenience method).
-
         Args:
-            features (torch.Tensor): Input features
+            x: [B, d_model] (we expect the temporal embedding to be pooled or last step)
 
         Returns:
-            torch.Tensor: Predicted RUL values
+            RUL prediction: [B, 1]
         """
-        return self.forward(features)
-
-if __name__ == "__main__":
-    # Example usage
-    print("Regression Head module ready")
+        # Pass through hidden layers
+        x = self.hidden_layers(x)  # [B, last_hidden_size]
+        # Output layer
+        x = self.output_layer(x)  # [B, 1]
+        # Output activation
+        x = self.output_activation(x)
+        return x

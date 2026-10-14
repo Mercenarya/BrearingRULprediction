@@ -1,0 +1,54 @@
+{
+  "requirement": "ROLE1_VERIFICATION_REQUIREMENTS.md section 5",
+  "primary_source": {
+    "document": "IEEEPHM2012-Challenge-Details.pdf",
+    "url": "https://raw.githubusercontent.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset/129d43e0aa71e1da992bb4c0f69d54fd990c58cf/IEEEPHM2012-Challenge-Details.pdf",
+    "sha256": "13bd43eb2dc4c8455e36584094552ccbd8101b9a0b99bd10ca82103453585ba5",
+    "matches_pinned_dataset_archive": true,
+    "label_locator": "Section 5.2, Table 3, printed page 8",
+    "failure_definition_locator": "Section 3.1, printed page 5; Note 1, printed page 6"
+  },
+  "primary_source_ground_truth_verified": true,
+  "all_11_labels_match_organizer_table": true,
+  "bearing_id": "Bearing1_4",
+  "organizer_table_rul_seconds": 339,
+  "configured_rul_seconds": 339,
+  "failure_endpoint_definition": "time to accelerometer exceeding 20g; not an automatic equation to the last CSV in a mirror",
+  "full_acquisition_count": 1428,
+  "test_acquisition_count": 1139,
+  "test_prefix_byte_identical": false,
+  "test_prefix_numeric_identical": true,
+  "prefix_numeric_mismatch_files": [],
+  "cut": {
+    "acquisition_index": 1139,
+    "timestamp": 40660.42504,
+    "abs_peak_axis0_g": 20.953,
+    "abs_peak_axis1_g": 24.243,
+    "sha256": "1b295cb9782ab170e81ba655b86b469cc801611312f713f488a886e5c97ecab7"
+  },
+  "terminal": {
+    "acquisition_index": 1428,
+    "timestamp": 43550.42504,
+    "abs_peak_axis0_g": 48.128,
+    "abs_peak_axis1_g": 47.849,
+    "sha256": "82aabd4bca06c9e4bbcce5932fd6ab5cd670ce729ee0be58161d15fd43cd5a66"
+  },
+  "terminal_minus_cut_seconds": 2890.0,
+  "discrepancy_seconds": 2551.0,
+  "table_implied_failure_timestamp": 40999.42504,
+  "first_recorded_absolute_peak_exceeding_20g": {
+    "acquisition_index": 1126,
+    "timestamp": 40530.42504,
+    "abs_peak_axis0_g": 13.668,
+    "abs_peak_axis1_g": 23.427,
+    "sha256": "ea2e22bd075620c8dadf6cec3f85467da6872682596e954c99b91708ca72a5ef",
+    "seconds_from_cut": -130.0,
+    "any_abs_peak_exceeds_20g": true
+  },
+  "raw_endpoint_reconciliation_verified": false,
+  "official_benchmark_ground_truth_ready": false,
+  "official_test_metrics_reported": false,
+  "status": "SOURCE_LABEL_CONFIRMED_RAW_ENDPOINT_UNRESOLVED",
+  "acceptance_decision": "Section 5 fallback satisfied: keep 339, warning and false readiness; do not report official metrics.",
+  "limitation": "The PDF confirms the published target and threshold definition, but does not explain the 2551-second mismatch in this pinned raw snapshot. A first sampled absolute peak is a diagnostic, not a redefinition of the organizer failure trigger."
+}

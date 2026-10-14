@@ -1,0 +1,172 @@
+{
+  "Bearing1_1": {
+    "subset": "Learning_set",
+    "full_acquisitions": 2803,
+    "loaded_acquisitions": 2803,
+    "observed_duration_s": 28020.0,
+    "rul_min_s": 0.0,
+    "rul_max_s": 28020.0,
+    "monotonic": true,
+    "label_source": "last valid learning acquisition"
+  },
+  "Bearing1_2": {
+    "subset": "Learning_set",
+    "full_acquisitions": 871,
+    "loaded_acquisitions": 871,
+    "observed_duration_s": 8700.0,
+    "rul_min_s": 0.0,
+    "rul_max_s": 8700.0,
+    "monotonic": true,
+    "label_source": "last valid learning acquisition"
+  },
+  "Bearing2_1": {
+    "subset": "Learning_set",
+    "full_acquisitions": 911,
+    "loaded_acquisitions": 911,
+    "observed_duration_s": 9100.0,
+    "rul_min_s": 0.0,
+    "rul_max_s": 9100.0,
+    "monotonic": true,
+    "label_source": "last valid learning acquisition"
+  },
+  "Bearing2_2": {
+    "subset": "Learning_set",
+    "full_acquisitions": 797,
+    "loaded_acquisitions": 797,
+    "observed_duration_s": 7960.0,
+    "rul_min_s": 0.0,
+    "rul_max_s": 7960.0,
+    "monotonic": true,
+    "label_source": "last valid learning acquisition"
+  },
+  "Bearing3_1": {
+    "subset": "Learning_set",
+    "full_acquisitions": 515,
+    "loaded_acquisitions": 515,
+    "observed_duration_s": 5140.0,
+    "rul_min_s": 0.0,
+    "rul_max_s": 5140.0,
+    "monotonic": true,
+    "label_source": "last valid learning acquisition"
+  },
+  "Bearing3_2": {
+    "subset": "Learning_set",
+    "full_acquisitions": 1637,
+    "loaded_acquisitions": 1637,
+    "observed_duration_s": 16360.0,
+    "rul_min_s": 0.0,
+    "rul_max_s": 16360.0,
+    "monotonic": true,
+    "label_source": "last valid learning acquisition"
+  },
+  "Bearing1_3": {
+    "subset": "Test_set",
+    "full_acquisitions": 1802,
+    "loaded_acquisitions": 1802,
+    "observed_duration_s": 18010.0,
+    "rul_min_s": 5730.0,
+    "rul_max_s": 23740.0,
+    "monotonic": true,
+    "label_source": "https://onlinelibrary.wiley.com/doi/10.1155/2022/9010419#tab6"
+  },
+  "Bearing1_4": {
+    "subset": "Test_set",
+    "full_acquisitions": 1139,
+    "loaded_acquisitions": 1139,
+    "observed_duration_s": 11380.000000000004,
+    "rul_min_s": 339.0,
+    "rul_max_s": 11719.000000000004,
+    "monotonic": true,
+    "label_source": "https://onlinelibrary.wiley.com/doi/10.1155/2022/9010419#tab6"
+  },
+  "Bearing1_5": {
+    "subset": "Test_set",
+    "full_acquisitions": 2302,
+    "loaded_acquisitions": 2302,
+    "observed_duration_s": 23010.0,
+    "rul_min_s": 1610.0,
+    "rul_max_s": 24620.0,
+    "monotonic": true,
+    "label_source": "https://onlinelibrary.wiley.com/doi/10.1155/2022/9010419#tab6"
+  },
+  "Bearing1_6": {
+    "subset": "Test_set",
+    "full_acquisitions": 2302,
+    "loaded_acquisitions": 2302,
+    "observed_duration_s": 23010.0,
+    "rul_min_s": 1460.0,
+    "rul_max_s": 24470.0,
+    "monotonic": true,
+    "label_source": "https://onlinelibrary.wiley.com/doi/10.1155/2022/9010419#tab6"
+  },
+  "Bearing1_7": {
+    "subset": "Test_set",
+    "full_acquisitions": 1502,
+    "loaded_acquisitions": 1502,
+    "observed_duration_s": 15010.0,
+    "rul_min_s": 7570.0,
+    "rul_max_s": 22580.0,
+    "monotonic": true,
+    "label_source": "https://onlinelibrary.wiley.com/doi/10.1155/2022/9010419#tab6"
+  },
+  "Bearing2_3": {
+    "subset": "Test_set",
+    "full_acquisitions": 1202,
+    "loaded_acquisitions": 1202,
+    "observed_duration_s": 12010.0,
+    "rul_min_s": 7530.0,
+    "rul_max_s": 19540.0,
+    "monotonic": true,
+    "label_source": "https://onlinelibrary.wiley.com/doi/10.1155/2022/9010419#tab6"
+  },
+  "Bearing2_4": {
+    "subset": "Test_set",
+    "full_acquisitions": 612,
+    "loaded_acquisitions": 612,
+    "observed_duration_s": 6110.0,
+    "rul_min_s": 1390.0,
+    "rul_max_s": 7500.0,
+    "monotonic": true,
+    "label_source": "https://onlinelibrary.wiley.com/doi/10.1155/2022/9010419#tab6"
+  },
+  "Bearing2_5": {
+    "subset": "Test_set",
+    "full_acquisitions": 2002,
+    "loaded_acquisitions": 2002,
+    "observed_duration_s": 20010.0,
+    "rul_min_s": 3090.0,
+    "rul_max_s": 23100.0,
+    "monotonic": true,
+    "label_source": "https://onlinelibrary.wiley.com/doi/10.1155/2022/9010419#tab6"
+  },
+  "Bearing2_6": {
+    "subset": "Test_set",
+    "full_acquisitions": 572,
+    "loaded_acquisitions": 572,
+    "observed_duration_s": 5710.0,
+    "rul_min_s": 1290.0,
+    "rul_max_s": 7000.0,
+    "monotonic": true,
+    "label_source": "https://onlinelibrary.wiley.com/doi/10.1155/2022/9010419#tab6"
+  },
+  "Bearing2_7": {
+    "subset": "Test_set",
+    "full_acquisitions": 172,
+    "loaded_acquisitions": 172,
+    "observed_duration_s": 1710.0,
+    "rul_min_s": 580.0,
+    "rul_max_s": 2290.0,
+    "monotonic": true,
+    "label_source": "https://onlinelibrary.wiley.com/doi/10.1155/2022/9010419#tab6"
+  },
+  "Bearing3_3": {
+    "subset": "Test_set",
+    "full_acquisitions": 352,
+    "loaded_acquisitions": 352,
+    "observed_duration_s": 3510.0,
+    "rul_min_s": 820.0,
+    "rul_max_s": 4330.0,
+    "monotonic": true,
+    "label_source": "https://onlinelibrary.wiley.com/doi/10.1155/2022/9010419#tab6"
+  }
+}

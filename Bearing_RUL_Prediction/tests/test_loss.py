@@ -12,6 +12,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 from losses.stage_aware_loss import StageAwarePHMLoss, WeightedMAELoss
 
+
 class TestStageAwarePHMLoss(unittest.TestCase):
     """Test cases for StageAwarePHMLoss class."""
 
@@ -55,6 +56,7 @@ class TestStageAwarePHMLoss(unittest.TestCase):
 
         self.assertAlmostEqual(loss.item(), expected_loss.item(), places=6)
 
+
     def test_over_prediction_penalty(self):
         """Test that over-prediction is penalized according to beta parameter."""
         # Case where we over-predict (y_pred > y_true)
@@ -68,8 +70,10 @@ class TestStageAwarePHMLoss(unittest.TestCase):
         # Since y_true (2.0) > theta (0.1), this is early stage
         # loss = exp(-beta * error) - 1 = exp(-0.3 * (-1.0)) - 1 = exp(0.3) - 1
         expected_loss = torch.exp(0.3 * 1.0) - 1
-
         self.assertAlmostEqual(loss.item(), expected_loss.item(), places=6)
+
+
+
 
     def test_stage_boundary_behavior(self):
         """Test behavior at the stage boundary (theta)."""
@@ -158,6 +162,7 @@ class TestStageAwarePHMLoss(unittest.TestCase):
         loss = self.loss_fn(y_pred, y_true)
         self.assertFalse(torch.isnan(loss))
         self.assertFalse(torch.isinf(loss))
+
 
     def test_different_parameters(self):
         """Test loss with different alpha, beta, theta values."""

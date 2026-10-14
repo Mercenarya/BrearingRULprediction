@@ -1,0 +1,14 @@
+[
+  {
+    "status": "PASS",
+    "notebook": "src/data/data_process.ipynb",
+    "code_cells": 65,
+    "markdown_cells": 104
+  },
+  {
+    "status": "PASS",
+    "notebook": "scripts/data_pipeline_scripts.ipynb",
+    "code_cells": 33,
+    "markdown_cells": 48
+  }
+]

@@ -1,0 +1,177 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "benchmarks": {
+    "train": {
+      "windows": 462,
+      "batches": 15,
+      "batch_size": 32,
+      "median_ms": 225.62089999996715,
+      "p95_ms": 280.20285999996304,
+      "samples_per_s": 143.89702355234334,
+      "num_workers": 0
+    },
+    "test": {
+      "windows": 866,
+      "batches": 28,
+      "batch_size": 32,
+      "median_ms": 4.416099999957623,
+      "p95_ms": 22.18219500003897,
+      "samples_per_s": 3530.873328497464,
+      "num_workers": 0
+    }
+  },
+  "counts_by_subset_condition_split": [
+    {
+      "subset": "Full_Test_Set",
+      "condition": "OC1",
+      "split": "excluded",
+      "bearings": 5,
+      "files": 12404,
+      "vibration_files": 10973,
+      "temperature_files": 1431,
+      "acquisitions": 10973,
+      "windows": 0
+    },
+    {
+      "subset": "Full_Test_Set",
+      "condition": "OC2",
+      "split": "excluded",
+      "bearings": 5,
+      "files": 6613,
+      "vibration_files": 5948,
+      "temperature_files": 665,
+      "acquisitions": 5948,
+      "windows": 0
+    },
+    {
+      "subset": "Full_Test_Set",
+      "condition": "OC3",
+      "split": "excluded",
+      "bearings": 1,
+      "files": 506,
+      "vibration_files": 434,
+      "temperature_files": 72,
+      "acquisitions": 434,
+      "windows": 0
+    },
+    {
+      "subset": "Learning_set",
+      "condition": "OC1",
+      "split": "train",
+      "bearings": 2,
+      "files": 4284,
+      "vibration_files": 3674,
+      "temperature_files": 610,
+      "acquisitions": 3674,
+      "windows": 227
+    },
+    {
+      "subset": "Learning_set",
+      "condition": "OC2",
+      "split": "train",
+      "bearings": 2,
+      "files": 1859,
+      "vibration_files": 1708,
+      "temperature_files": 151,
+      "acquisitions": 1708,
+      "windows": 103
+    },
+    {
+      "subset": "Learning_set",
+      "condition": "OC3",
+      "split": "train",
+      "bearings": 2,
+      "files": 2241,
+      "vibration_files": 2152,
+      "temperature_files": 89,
+      "acquisitions": 2152,
+      "windows": 132
+    },
+    {
+      "subset": "Test_set",
+      "condition": "OC1",
+      "split": "test",
+      "bearings": 5,
+      "files": 10251,
+      "vibration_files": 9047,
+      "temperature_files": 1204,
+      "acquisitions": 9047,
+      "windows": 562
+    },
+    {
+      "subset": "Test_set",
+      "condition": "OC2",
+      "split": "test",
+      "bearings": 5,
+      "files": 5024,
+      "vibration_files": 4560,
+      "temperature_files": 464,
+      "acquisitions": 4560,
+      "windows": 283
+    },
+    {
+      "subset": "Test_set",
+      "condition": "OC3",
+      "split": "test",
+      "bearings": 1,
+      "files": 410,
+      "vibration_files": 352,
+      "temperature_files": 58,
+      "acquisitions": 352,
+      "windows": 21
+    }
+  ],
+  "cache_identity_verified": true,
+  "tracing_examples": {
+    "train": {
+      "bearing_id": "Bearing1_1",
+      "raw_end_path": "Learning_set/Bearing1_1/acc_02112.csv",
+      "end_index": 2112,
+      "end_timestamp": 55889.065664,
+      "rul_s": 6910.0,
+      "vibration_shape": [
+        32,
+        32,
+        2,
+        1024
+      ],
+      "temperature_shape": [
+        32,
+        32,
+        1,
+        64
+      ]
+    },
+    "test": {
+      "bearing_id": "Bearing1_3",
+      "raw_end_path": "Test_set/Bearing1_3/acc_00032.csv",
+      "end_index": 32,
+      "end_timestamp": 31091.37816,
+      "rul_s": 23430.0,
+      "vibration_shape": [
+        32,
+        32,
+        2,
+        1024
+      ],
+      "temperature_shape": [
+        32,
+        32,
+        1,
+        64
+      ]
+    }
+  },
+  "ram": {
+    "working_set_mb": 457.63671875,
+    "peak_working_set_mb": 554.359375
+  },
+  "machine": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "torch": "2.14.0+cpu"
+  }
+}

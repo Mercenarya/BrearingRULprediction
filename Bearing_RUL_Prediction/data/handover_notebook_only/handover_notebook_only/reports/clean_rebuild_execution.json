@@ -1,0 +1,304 @@
+{
+  "preprocessing_status": "PASS",
+  "rebuilt": true,
+  "execution_mode": "clean_rebuild",
+  "raw_root": "C:\\Users\\ACER\\Downloads\\PHM_2012_Raw\\ieee-phm-2012-data-challenge-dataset-master",
+  "output_root": "C:\\Users\\ACER\\Downloads\\Bearing_RUL_Prediction\\artifacts\\pronostia_feedback_clean_20261006_174357",
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "torch": "2.14.0+cpu",
+    "scipy": "1.17.1",
+    "yaml": "6.0.3",
+    "platform": "Windows-10-10.0.26300-SP0"
+  },
+  "tests": {
+    "parser": {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "status": "PASS"
+    },
+    "contract": {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "status": "PASS"
+    },
+    "identity": {
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "status": "PASS"
+    },
+    "feedback": {
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "status": "PASS"
+    },
+    "integration": {
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "status": "PASS"
+    }
+  },
+  "folds": [
+    {
+      "fold": "0",
+      "status": "PASS",
+      "train": 288,
+      "validation": 175,
+      "test": 0
+    },
+    {
+      "fold": "1",
+      "status": "PASS",
+      "train": 409,
+      "validation": 54,
+      "test": 0
+    },
+    {
+      "fold": "2",
+      "status": "PASS",
+      "train": 407,
+      "validation": 56,
+      "test": 0
+    },
+    {
+      "fold": "3",
+      "status": "PASS",
+      "train": 414,
+      "validation": 49,
+      "test": 0
+    },
+    {
+      "fold": "4",
+      "status": "PASS",
+      "train": 431,
+      "validation": 32,
+      "test": 0
+    },
+    {
+      "fold": "5",
+      "status": "PASS",
+      "train": 361,
+      "validation": 102,
+      "test": 0
+    },
+    {
+      "fold": "official",
+      "status": "PASS",
+      "train": 462,
+      "validation": 0,
+      "test": 866
+    }
+  ],
+  "source_hash": "2364f7dd29d49eeaa871d289e430987478de3dd67f4609b9125f258a8918179a",
+  "config_hash": "ffa23be153ff675772f15180e86a16ca8ac5bc2a8c11b4d0b1b5ef645f002dc3",
+  "dataset_source": {
+    "repository_url": "https://github.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset",
+    "commit_sha": "129d43e0aa71e1da992bb4c0f69d54fd990c58cf",
+    "expected_archive_sha256": "558876e6ea76a803265a744a94e67f67cad7a1ea2c799e6ec42665187e6789d1",
+    "archive_url": "https://codeload.github.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset/zip/refs/heads/master",
+    "pin_policy": "content SHA-256 AND GitHub ZIP commit comment; refuse changed master content",
+    "dataset_version": "PHM2012 snapshot 129d43e0"
+  },
+  "ground_truth_comparison": [
+    {
+      "bearing_id": "Bearing1_3",
+      "rul_seconds": 5730,
+      "source": "https://www.mdpi.com/2076-3417/8/7/1102",
+      "source_locator": "Table 2, DOI 10.3390/app8071102; secondary published benchmark table, not organizer answer-key",
+      "verified_against_full_test": true,
+      "primary_source": "https://raw.githubusercontent.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset/129d43e0aa71e1da992bb4c0f69d54fd990c58cf/IEEEPHM2012-Challenge-Details.pdf",
+      "primary_source_locator": "Organizer challenge document; Section 5.2, Table 3, printed page 8",
+      "verified_against_primary_source": true,
+      "test_cut_timestamp": 48791.37816,
+      "full_test_terminal_timestamp": 54521.37816,
+      "derived_rul_seconds": 5730.0,
+      "configured_rul_seconds": 5730.0,
+      "absolute_difference_seconds": 0.0,
+      "verification_status": "MATCH"
+    },
+    {
+      "bearing_id": "Bearing1_4",
+      "rul_seconds": 339,
+      "source": "https://www.mdpi.com/2076-3417/8/7/1102",
+      "source_locator": "Table 2, DOI 10.3390/app8071102; secondary published benchmark table, not organizer answer-key",
+      "verified_against_full_test": false,
+      "primary_source": "https://raw.githubusercontent.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset/129d43e0aa71e1da992bb4c0f69d54fd990c58cf/IEEEPHM2012-Challenge-Details.pdf",
+      "primary_source_locator": "Organizer challenge document; Section 5.2, Table 3, printed page 8",
+      "verified_against_primary_source": true,
+      "test_cut_timestamp": 40660.42504,
+      "full_test_terminal_timestamp": 43550.42504,
+      "derived_rul_seconds": 2890.0,
+      "configured_rul_seconds": 339.0,
+      "absolute_difference_seconds": 2551.0,
+      "verification_status": "HIGH_WARNING_MISMATCH"
+    },
+    {
+      "bearing_id": "Bearing1_5",
+      "rul_seconds": 1610,
+      "source": "https://www.mdpi.com/2076-3417/8/7/1102",
+      "source_locator": "Table 2, DOI 10.3390/app8071102; secondary published benchmark table, not organizer answer-key",
+      "verified_against_full_test": true,
+      "primary_source": "https://raw.githubusercontent.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset/129d43e0aa71e1da992bb4c0f69d54fd990c58cf/IEEEPHM2012-Challenge-Details.pdf",
+      "primary_source_locator": "Organizer challenge document; Section 5.2, Table 3, printed page 8",
+      "verified_against_primary_source": true,
+      "test_cut_timestamp": 56634.21254,
+      "full_test_terminal_timestamp": 58244.21254,
+      "derived_rul_seconds": 1610.0,
+      "configured_rul_seconds": 1610.0,
+      "absolute_difference_seconds": 0.0,
+      "verification_status": "MATCH"
+    },
+    {
+      "bearing_id": "Bearing1_6",
+      "rul_seconds": 1460,
+      "source": "https://www.mdpi.com/2076-3417/8/7/1102",
+      "source_locator": "Table 2, DOI 10.3390/app8071102; secondary published benchmark table, not organizer answer-key",
+      "verified_against_full_test": true,
+      "primary_source": "https://raw.githubusercontent.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset/129d43e0aa71e1da992bb4c0f69d54fd990c58cf/IEEEPHM2012-Challenge-Details.pdf",
+      "primary_source_locator": "Organizer challenge document; Section 5.2, Table 3, printed page 8",
+      "verified_against_primary_source": true,
+      "test_cut_timestamp": 55581.77504,
+      "full_test_terminal_timestamp": 57041.77504,
+      "derived_rul_seconds": 1460.0,
+      "configured_rul_seconds": 1460.0,
+      "absolute_difference_seconds": 0.0,
+      "verification_status": "MATCH"
+    },
+    {
+      "bearing_id": "Bearing1_7",
+      "rul_seconds": 7570,
+      "source": "https://www.mdpi.com/2076-3417/8/7/1102",
+      "source_locator": "Table 2, DOI 10.3390/app8071102; secondary published benchmark table, not organizer answer-key",
+      "verified_against_full_test": true,
+      "primary_source": "https://raw.githubusercontent.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset/129d43e0aa71e1da992bb4c0f69d54fd990c58cf/IEEEPHM2012-Challenge-Details.pdf",
+      "primary_source_locator": "Organizer challenge document; Section 5.2, Table 3, printed page 8",
+      "verified_against_primary_source": true,
+      "test_cut_timestamp": 43967.96254,
+      "full_test_terminal_timestamp": 51537.96254,
+      "derived_rul_seconds": 7570.0,
+      "configured_rul_seconds": 7570.0,
+      "absolute_difference_seconds": 0.0,
+      "verification_status": "MATCH"
+    },
+    {
+      "bearing_id": "Bearing2_3",
+      "rul_seconds": 7530,
+      "source": "https://www.mdpi.com/2076-3417/8/7/1102",
+      "source_locator": "Table 2, DOI 10.3390/app8071102; secondary published benchmark table, not organizer answer-key",
+      "verified_against_full_test": true,
+      "primary_source": "https://raw.githubusercontent.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset/129d43e0aa71e1da992bb4c0f69d54fd990c58cf/IEEEPHM2012-Challenge-Details.pdf",
+      "primary_source_locator": "Organizer challenge document; Section 5.2, Table 3, printed page 8",
+      "verified_against_primary_source": true,
+      "test_cut_timestamp": 43207.57191,
+      "full_test_terminal_timestamp": 50737.57191,
+      "derived_rul_seconds": 7530.0,
+      "configured_rul_seconds": 7530.0,
+      "absolute_difference_seconds": 0.0,
+      "verification_status": "MATCH"
+    },
+    {
+      "bearing_id": "Bearing2_4",
+      "rul_seconds": 1390,
+      "source": "https://www.mdpi.com/2076-3417/8/7/1102",
+      "source_locator": "Table 2, DOI 10.3390/app8071102; secondary published benchmark table, not organizer answer-key",
+      "verified_against_full_test": true,
+      "primary_source": "https://raw.githubusercontent.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset/129d43e0aa71e1da992bb4c0f69d54fd990c58cf/IEEEPHM2012-Challenge-Details.pdf",
+      "primary_source_locator": "Organizer challenge document; Section 5.2, Table 3, printed page 8",
+      "verified_against_primary_source": true,
+      "test_cut_timestamp": 35126.46254,
+      "full_test_terminal_timestamp": 36516.46254,
+      "derived_rul_seconds": 1390.0,
+      "configured_rul_seconds": 1390.0,
+      "absolute_difference_seconds": 0.0,
+      "verification_status": "MATCH"
+    },
+    {
+      "bearing_id": "Bearing2_5",
+      "rul_seconds": 3090,
+      "source": "https://www.mdpi.com/2076-3417/8/7/1102",
+      "source_locator": "Table 2, DOI 10.3390/app8071102; secondary published benchmark table, not organizer answer-key",
+      "verified_against_full_test": true,
+      "primary_source": "https://raw.githubusercontent.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset/129d43e0aa71e1da992bb4c0f69d54fd990c58cf/IEEEPHM2012-Challenge-Details.pdf",
+      "primary_source_locator": "Organizer challenge document; Section 5.2, Table 3, printed page 8",
+      "verified_against_primary_source": true,
+      "test_cut_timestamp": 51076.15004,
+      "full_test_terminal_timestamp": 54166.15004,
+      "derived_rul_seconds": 3090.0,
+      "configured_rul_seconds": 3090.0,
+      "absolute_difference_seconds": 0.0,
+      "verification_status": "MATCH"
+    },
+    {
+      "bearing_id": "Bearing2_6",
+      "rul_seconds": 1290,
+      "source": "https://www.mdpi.com/2076-3417/8/7/1102",
+      "source_locator": "Table 2, DOI 10.3390/app8071102; secondary published benchmark table, not organizer answer-key",
+      "verified_against_full_test": true,
+      "primary_source": "https://raw.githubusercontent.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset/129d43e0aa71e1da992bb4c0f69d54fd990c58cf/IEEEPHM2012-Challenge-Details.pdf",
+      "primary_source_locator": "Organizer challenge document; Section 5.2, Table 3, printed page 8",
+      "verified_against_primary_source": true,
+      "test_cut_timestamp": 37641.61879,
+      "full_test_terminal_timestamp": 38931.61879,
+      "derived_rul_seconds": 1290.0,
+      "configured_rul_seconds": 1290.0,
+      "absolute_difference_seconds": 0.0,
+      "verification_status": "MATCH"
+    },
+    {
+      "bearing_id": "Bearing2_7",
+      "rul_seconds": 580,
+      "source": "https://www.mdpi.com/2076-3417/8/7/1102",
+      "source_locator": "Table 2, DOI 10.3390/app8071102; secondary published benchmark table, not organizer answer-key",
+      "verified_against_full_test": true,
+      "primary_source": "https://raw.githubusercontent.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset/129d43e0aa71e1da992bb4c0f69d54fd990c58cf/IEEEPHM2012-Challenge-Details.pdf",
+      "primary_source_locator": "Organizer challenge document; Section 5.2, Table 3, printed page 8",
+      "verified_against_primary_source": true,
+      "test_cut_timestamp": 32935.15004,
+      "full_test_terminal_timestamp": 33515.15004,
+      "derived_rul_seconds": 580.0,
+      "configured_rul_seconds": 580.0,
+      "absolute_difference_seconds": 0.0,
+      "verification_status": "MATCH"
+    },
+    {
+      "bearing_id": "Bearing3_3",
+      "rul_seconds": 820,
+      "source": "https://www.mdpi.com/2076-3417/8/7/1102",
+      "source_locator": "Table 2, DOI 10.3390/app8071102; secondary published benchmark table, not organizer answer-key",
+      "verified_against_full_test": true,
+      "primary_source": "https://raw.githubusercontent.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset/129d43e0aa71e1da992bb4c0f69d54fd990c58cf/IEEEPHM2012-Challenge-Details.pdf",
+      "primary_source_locator": "Organizer challenge document; Section 5.2, Table 3, printed page 8",
+      "verified_against_primary_source": true,
+      "test_cut_timestamp": 33963.21254,
+      "full_test_terminal_timestamp": 34783.21254,
+      "derived_rul_seconds": 820.0,
+      "configured_rul_seconds": 820.0,
+      "absolute_difference_seconds": 0.0,
+      "verification_status": "MATCH"
+    }
+  ],
+  "official_benchmark_ground_truth_ready": false,
+  "acceptance_status": "REVIEW_REQUIRED_GROUND_TRUTH",
+  "modality_missing_bearings": [
+    "Bearing2_2",
+    "Bearing3_2",
+    "Bearing1_3",
+    "Bearing2_3",
+    "Bearing2_6"
+  ],
+  "aliasing_check": {
+    "passband_hz": 1000,
+    "stopband_hz": 8000,
+    "passband_rms": 0.7065986394882202,
+    "stopband_rms": 0.00019328284543007612,
+    "attenuation_db": -71.2595897280165,
+    "pass": true
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "Bearing1_1/raw_demean": {
+    "raw_path": "Learning_set/Bearing1_1/acc_01402.csv",
+    "shape": [
+      2,
+      2560
+    ],
+    "effective_fs_hz": 25600,
+    "nyquist_hz": 12800.0,
+    "rms_xy": [
+      0.45158281922340393,
+      0.38041266798973083
+    ],
+    "peak_xy": [
+      1.6558624505996704,
+      1.3286726474761963
+    ]
+  },
+  "Bearing1_1/bandpass_full": {
+    "raw_path": "Learning_set/Bearing1_1/acc_01402.csv",
+    "shape": [
+      2,
+      2560
+    ],
+    "effective_fs_hz": 25600,
+    "nyquist_hz": 12800.0,
+    "rms_xy": [
+      0.40817874670028687,
+      0.30453935265541077
+    ],
+    "peak_xy": [
+      1.5329632759094238,
+      1.391741156578064
+    ]
+  },
+  "Bearing1_1/resample_1024": {
+    "raw_path": "Learning_set/Bearing1_1/acc_01402.csv",
+    "shape": [
+      2,
+      1024
+    ],
+    "effective_fs_hz": 10240,
+    "nyquist_hz": 5120.0,
+    "rms_xy": [
+      0.41825127601623535,
+      0.14435623586177826
+    ],
+    "peak_xy": [
+      1.5860779285430908,
+      0.46754929423332214
+    ]
+  },
+  "Bearing2_1/raw_demean": {
+    "raw_path": "Learning_set/Bearing2_1/acc_00456.csv",
+    "shape": [
+      2,
+      2560
+    ],
+    "effective_fs_hz": 25600,
+    "nyquist_hz": 12800.0,
+    "rms_xy": [
+      0.6543886065483093,
+      0.8147841691970825
+    ],
+    "peak_xy": [
+      2.2948038578033447,
+      3.3296778202056885
+    ]
+  },
+  "Bearing2_1/bandpass_full": {
+    "raw_path": "Learning_set/Bearing2_1/acc_00456.csv",
+    "shape": [
+      2,
+      2560
+    ],
+    "effective_fs_hz": 25600,
+    "nyquist_hz": 12800.0,
+    "rms_xy": [
+      0.2850073575973511,
+      0.28908461332321167
+    ],
+    "peak_xy": [
+      1.0334364175796509,
+      1.2626378536224365
+    ]
+  },
+  "Bearing2_1/resample_1024": {
+    "raw_path": "Learning_set/Bearing2_1/acc_00456.csv",
+    "shape": [
+      2,
+      1024
+    ],
+    "effective_fs_hz": 10240,
+    "nyquist_hz": 5120.0,
+    "rms_xy": [
+      0.2367153763771057,
+      0.09835810214281082
+    ],
+    "peak_xy": [
+      0.9929229021072388,
+      0.39497697353363037
+    ]
+  },
+  "Bearing3_1/raw_demean": {
+    "raw_path": "Learning_set/Bearing3_1/acc_00258.csv",
+    "shape": [
+      2,
+      2560
+    ],
+    "effective_fs_hz": 25600,
+    "nyquist_hz": 12800.0,
+    "rms_xy": [
+      0.29899483919143677,
+      0.32334500551223755
+    ],
+    "peak_xy": [
+      1.7901214361190796,
+      1.6307401657104492
+    ]
+  },
+  "Bearing3_1/bandpass_full": {
+    "raw_path": "Learning_set/Bearing3_1/acc_00258.csv",
+    "shape": [
+      2,
+      2560
+    ],
+    "effective_fs_hz": 25600,
+    "nyquist_hz": 12800.0,
+    "rms_xy": [
+      0.29003310203552246,
+      0.2940432131290436
+    ],
+    "peak_xy": [
+      1.6541309356689453,
+      1.7238832712173462
+    ]
+  },
+  "Bearing3_1/resample_1024": {
+    "raw_path": "Learning_set/Bearing3_1/acc_00258.csv",
+    "shape": [
+      2,
+      1024
+    ],
+    "effective_fs_hz": 10240,
+    "nyquist_hz": 5120.0,
+    "rms_xy": [
+      0.2591509521007538,
+      0.1918615996837616
+    ],
+    "peak_xy": [
+      1.5947915315628052,
+      0.8852199912071228
+    ]
+  },
+  "aliasing_check": {
+    "passband_hz": 1000,
+    "stopband_hz": 8000,
+    "passband_rms": 0.7065986394882202,
+    "stopband_rms": 0.00019328284543007612,
+    "attenuation_db": -71.2595897280165,
+    "pass": true
+  }
+}

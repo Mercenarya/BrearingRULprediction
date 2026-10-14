@@ -1,0 +1,34 @@
+Notebook directory: C:\Users\ACER\Downloads\Bearing_RUL_Prediction\handover_notebook_only
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.210s
+
+OK
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.069s
+
+OK
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.579s
+
+OK
+F........
+======================================================================
+FAIL: test_causal_delta_and_gap (__main__.FeedbackRegressionTests.test_causal_delta_and_gap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "cell 165: Định nghĩa FeedbackRegressionTests", line 40, in test_causal_delta_and_gap
+AssertionError: np.False_ is not true
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.036s
+
+FAILED (failures=1)
+FAILED CELL 175 {'phase': 'test_execution', 'task': 'Chạy feedback regression tests'}
+Traceback (most recent call last):
+  File "<stdin>", line 8, in <module>
+  File "cell 175: Chạy feedback regression tests", line 1, in <module>
+  File "cell 167: Định nghĩa execute_test_classes", line 6, in execute_test_classes
+AssertionError: {'tests': 9, 'failures': 1, 'errors': 0, 'status': 'ERROR'}

@@ -1,0 +1,91 @@
+Scanning Learning_set/Bearing1_1
+........................
+----------------------------------------------------------------------
+Ran 24 tests in 0.559s
+
+OK
+Scanning Learning_set/Bearing1_1
+Scanning Learning_set/Bearing1_2
+Scanning Learning_set/Bearing2_1
+Scanning Learning_set/Bearing2_2
+Scanning Learning_set/Bearing3_1
+Scanning Learning_set/Bearing3_2
+Scanning Test_set/Bearing1_3
+Scanning Test_set/Bearing1_4
+Scanning Test_set/Bearing1_5
+Scanning Test_set/Bearing1_6
+Scanning Test_set/Bearing1_7
+Scanning Test_set/Bearing2_3
+Scanning Test_set/Bearing2_4
+Scanning Test_set/Bearing2_5
+Scanning Test_set/Bearing2_6
+Scanning Test_set/Bearing2_7
+Scanning Test_set/Bearing3_3
+Prepared Learning_set/Bearing1_1: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing1_2: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing2_1: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing2_2: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing3_1: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing3_2: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_3: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_4: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_5: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_6: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_7: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_3: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_4: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_5: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_6: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_7: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing3_3: 5 acquisitions, temperature missing 100.00%
+Exported fold_0: 7 windows
+Exported official: 28 windows
+Validated fold_0: PASS
+Validated official: PASS
+Validated official: ERROR
+Scanning Learning_set/Bearing1_1
+Scanning Learning_set/Bearing1_2
+Scanning Learning_set/Bearing2_1
+Scanning Learning_set/Bearing2_2
+Scanning Learning_set/Bearing3_1
+Scanning Learning_set/Bearing3_2
+Scanning Test_set/Bearing1_3
+Scanning Test_set/Bearing1_4
+Scanning Test_set/Bearing1_5
+Scanning Test_set/Bearing1_6
+Scanning Test_set/Bearing1_7
+Scanning Test_set/Bearing2_3
+Scanning Test_set/Bearing2_4
+Scanning Test_set/Bearing2_5
+Scanning Test_set/Bearing2_6
+Scanning Test_set/Bearing2_7
+Scanning Test_set/Bearing3_3
+Prepared Learning_set/Bearing1_1: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing1_2: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing2_1: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing2_2: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing3_1: 5 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing3_2: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_3: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_4: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_5: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_6: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_7: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_3: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_4: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_5: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_6: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_7: 5 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing3_3: 5 acquisitions, temperature missing 100.00%
+Exported fold_0: 7 windows
+Exported official: 28 windows
+.
+----------------------------------------------------------------------
+Ran 1 test in 6.266s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.126s
+
+OK

@@ -1,0 +1,32 @@
+{
+  "parser": {
+    "tests": 7,
+    "failures": 0,
+    "errors": 0,
+    "status": "PASS"
+  },
+  "contract": {
+    "tests": 7,
+    "failures": 0,
+    "errors": 0,
+    "status": "PASS"
+  },
+  "identity": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "status": "PASS"
+  },
+  "feedback": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "status": "PASS"
+  },
+  "integration": {
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "status": "PASS"
+  }
+}

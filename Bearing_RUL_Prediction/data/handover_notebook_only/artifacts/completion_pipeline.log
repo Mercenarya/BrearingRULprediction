@@ -1,0 +1,61 @@
+Scanning Learning_set/Bearing1_1
+Scanning Learning_set/Bearing1_2
+Scanning Learning_set/Bearing2_1
+Scanning Learning_set/Bearing2_2
+Scanning Learning_set/Bearing3_1
+Scanning Learning_set/Bearing3_2
+Scanning Test_set/Bearing1_3
+Scanning Test_set/Bearing1_4
+Scanning Test_set/Bearing1_5
+Scanning Test_set/Bearing1_6
+Scanning Test_set/Bearing1_7
+Scanning Test_set/Bearing2_3
+Scanning Test_set/Bearing2_4
+Scanning Test_set/Bearing2_5
+Scanning Test_set/Bearing2_6
+Scanning Test_set/Bearing2_7
+Scanning Test_set/Bearing3_3
+Scanning Full_Test_Set/Bearing1_3
+Scanning Full_Test_Set/Bearing1_4
+Scanning Full_Test_Set/Bearing1_5
+Scanning Full_Test_Set/Bearing1_6
+Scanning Full_Test_Set/Bearing1_7
+Scanning Full_Test_Set/Bearing2_3
+Scanning Full_Test_Set/Bearing2_4
+Scanning Full_Test_Set/Bearing2_5
+Scanning Full_Test_Set/Bearing2_6
+Scanning Full_Test_Set/Bearing2_7
+Scanning Full_Test_Set/Bearing3_3
+Inventory: 43592 files
+Prepared Learning_set/Bearing1_1: 2803 acquisitions, temperature missing 0.37%
+Prepared Learning_set/Bearing1_2: 871 acquisitions, temperature missing 1.12%
+Prepared Learning_set/Bearing2_1: 911 acquisitions, temperature missing 1.46%
+Prepared Learning_set/Bearing2_2: 797 acquisitions, temperature missing 100.00%
+Prepared Learning_set/Bearing3_1: 515 acquisitions, temperature missing 1.84%
+Prepared Learning_set/Bearing3_2: 1637 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_3: 1802 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing1_4: 1139 acquisitions, temperature missing 1.26%
+Prepared Test_set/Bearing1_5: 2302 acquisitions, temperature missing 0.37%
+Prepared Test_set/Bearing1_6: 2302 acquisitions, temperature missing 0.38%
+Prepared Test_set/Bearing1_7: 1502 acquisitions, temperature missing 0.63%
+Prepared Test_set/Bearing2_3: 1202 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_4: 612 acquisitions, temperature missing 1.50%
+Prepared Test_set/Bearing2_5: 2002 acquisitions, temperature missing 0.18%
+Prepared Test_set/Bearing2_6: 572 acquisitions, temperature missing 100.00%
+Prepared Test_set/Bearing2_7: 172 acquisitions, temperature missing 5.40%
+Prepared Test_set/Bearing3_3: 352 acquisitions, temperature missing 2.73%
+Exported fold_0: 463 windows
+Exported fold_1: 463 windows
+Exported fold_2: 463 windows
+Exported fold_3: 463 windows
+Exported fold_4: 463 windows
+Exported fold_5: 463 windows
+Exported official: 1328 windows
+Validated fold_0: PASS
+Validated fold_1: PASS
+Validated fold_2: PASS
+Validated fold_3: PASS
+Validated fold_4: PASS
+Validated fold_5: PASS
+Validated official: PASS
+Saved QC figures and aliasing metrics to artifacts\pronostia-v1\figures

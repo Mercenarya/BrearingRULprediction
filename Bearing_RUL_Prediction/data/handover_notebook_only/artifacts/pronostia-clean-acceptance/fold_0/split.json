@@ -1,0 +1,14 @@
+{
+  "fold": 0,
+  "train": [
+    "Bearing1_2",
+    "Bearing2_1",
+    "Bearing2_2",
+    "Bearing3_1",
+    "Bearing3_2"
+  ],
+  "validation": [
+    "Bearing1_1"
+  ],
+  "test": []
+}

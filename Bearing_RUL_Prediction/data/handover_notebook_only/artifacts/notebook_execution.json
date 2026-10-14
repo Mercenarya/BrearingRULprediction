@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "suite": "unit",
+      "tests": 24,
+      "errors": 0,
+      "failures": 0
+    },
+    {
+      "suite": "integration",
+      "tests": 1,
+      "errors": 0,
+      "failures": 0
+    },
+    {
+      "suite": "dataset",
+      "tests": 5,
+      "errors": 0,
+      "failures": 0
+    }
+  ],
+  "folds": [
+    {
+      "cache": "fold_0",
+      "status": "PASS",
+      "train": 288,
+      "validation": 175,
+      "test": 0
+    },
+    {
+      "cache": "fold_1",
+      "status": "PASS",
+      "train": 409,
+      "validation": 54,
+      "test": 0
+    },
+    {
+      "cache": "fold_2",
+      "status": "PASS",
+      "train": 407,
+      "validation": 56,
+      "test": 0
+    },
+    {
+      "cache": "fold_3",
+      "status": "PASS",
+      "train": 414,
+      "validation": 49,
+      "test": 0
+    },
+    {
+      "cache": "fold_4",
+      "status": "PASS",
+      "train": 431,
+      "validation": 32,
+      "test": 0
+    },
+    {
+      "cache": "fold_5",
+      "status": "PASS",
+      "train": 361,
+      "validation": 102,
+      "test": 0
+    },
+    {
+      "cache": "official",
+      "status": "PASS",
+      "train": 462,
+      "validation": 0,
+      "test": 866
+    }
+  ],
+  "raw_root": "C:\\Users\\ACER\\Downloads\\PHM_2012_Raw\\ieee-phm-2012-data-challenge-dataset-master",
+  "output_root": "artifacts\\pronostia-v1",
+  "rebuilt": false,
+  "aliasing_check": {
+    "passband_hz": 1000,
+    "stopband_hz": 8000,
+    "passband_rms": 0.7065986394882202,
+    "stopband_rms": 0.00019328284543007612,
+    "attenuation_db": -71.2595897280165,
+    "pass": true
+  }
+}

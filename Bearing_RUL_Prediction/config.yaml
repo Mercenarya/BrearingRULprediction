@@ -6,25 +6,29 @@ data:
   window_size: 1024
   overlap: 0.5
   normalization: "standard"  # or "minmax"
+  vib_channels: 2
+  temp_channels: 1
 
 # Model parameters
 model:
+  cnn_out_channels: 64
   cnn_scales: [early, mid, late]
-  fusion_type: "concat"  # early, mid, late
-  lstm_hidden_size: 128
+  fusion_type: "concat"
+  lstm_hidden_size: 96
   lstm_num_layers: 2
-  dropout_rate: 0.3
+  dropout_rate: 0.5
 
 # Training parameters
 training:
-  batch_size: 64
-  learning_rate: 0.001
-  num_epochs: 100
+  batch_size: 16
+  learning_rate: 0.00003
+  num_epochs: 40
   early_stopping_patience: 10
   optimizer: "adam"
+  weight_decay: 0.0001
   loss_function: "stage_aware_phm_loss"
-  alpha: 0.5  # PHM loss weighting
-  beta: 0.3   # PHM loss weighting
+  alpha: 0.7
+  beta: 0.2
 
 # Evaluation parameters
 evaluation:
@@ -33,6 +37,6 @@ evaluation:
 
 # Logging parameters
 logging:
-  use_wandb: true
+  use_wandb: false
   project_name: "bearing_rul_prediction"
   log_interval: 10

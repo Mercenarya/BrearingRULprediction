@@ -1,0 +1,158 @@
+{
+  "raw_root": "C:\\Users\\ACER\\Downloads\\XJTU-SY_Bearing_Datasets",
+  "status": "PARTIAL_EXTERNAL_DATASET",
+  "found_bearings": [
+    "35Hz12kN/Bearing1_1",
+    "35Hz12kN/Bearing1_2",
+    "35Hz12kN/Bearing1_3",
+    "35Hz12kN/Bearing1_4",
+    "35Hz12kN/Bearing1_5",
+    "37.5Hz11kN/Bearing2_1",
+    "37.5Hz11kN/Bearing2_2",
+    "37.5Hz11kN/Bearing2_3"
+  ],
+  "missing_bearings": [
+    "37.5Hz11kN/Bearing2_4",
+    "37.5Hz11kN/Bearing2_5",
+    "40Hz10kN/Bearing3_1",
+    "40Hz10kN/Bearing3_2",
+    "40Hz10kN/Bearing3_3",
+    "40Hz10kN/Bearing3_4",
+    "40Hz10kN/Bearing3_5"
+  ],
+  "files": 1555,
+  "quarantined_files": 0,
+  "issues": [
+    {
+      "severity": "WARNING",
+      "path": "37.5Hz11kN/Bearing2_3",
+      "reason": "missing/non-contiguous indices",
+      "missing_indices": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "bearing": "35Hz12kN/Bearing1_1",
+      "files": 123,
+      "contiguous": true,
+      "observed_duration_s": 7320
+    },
+    {
+      "bearing": "35Hz12kN/Bearing1_2",
+      "files": 161,
+      "contiguous": true,
+      "observed_duration_s": 9600
+    },
+    {
+      "bearing": "35Hz12kN/Bearing1_3",
+      "files": 158,
+      "contiguous": true,
+      "observed_duration_s": 9420
+    },
+    {
+      "bearing": "35Hz12kN/Bearing1_4",
+      "files": 122,
+      "contiguous": true,
+      "observed_duration_s": 7260
+    },
+    {
+      "bearing": "35Hz12kN/Bearing1_5",
+      "files": 52,
+      "contiguous": true,
+      "observed_duration_s": 3060
+    },
+    {
+      "bearing": "37.5Hz11kN/Bearing2_1",
+      "files": 491,
+      "contiguous": true,
+      "observed_duration_s": 29400
+    },
+    {
+      "bearing": "37.5Hz11kN/Bearing2_2",
+      "files": 161,
+      "contiguous": true,
+      "observed_duration_s": 9600
+    },
+    {
+      "bearing": "37.5Hz11kN/Bearing2_3",
+      "files": 287,
+      "contiguous": false,
+      "observed_duration_s": 21360
+    }
+  ],
+  "label_convention": "Provisional last observed acquisition as failure ONLY for contiguous locally available runs; completeness against original run not yet verified.",
+  "temperature_available": false,
+  "source_reference": "https://github.com/WangBiaoXJTU/xjtu-sy-bearing-datasets",
+  "cross_dataset_note": "Separate 1.28 s snapshots at one-minute intervals; requires vibration-only evaluation or an explicit missing-modality model. Never fit the PRONOSTIA scaler on this external dataset."
+}

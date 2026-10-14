@@ -1,10 +1,14 @@
 """
 Script to evaluate trained models on test set.
 """
-import os
+import os, sys
 import torch
 import yaml
 import numpy as np
+
+CURRENT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.join(CURRENT, "..", "..")
+sys.path.append(ROOT)
 from src.data.dataset import BearingDataset, create_data_loaders
 from src.models.rul_model import RULModel
 from src.evaluation.metrics import calculate_all_metrics
@@ -19,7 +23,7 @@ def load_config(config_path="config.yaml"):
     Returns:
         dict: Configuration dictionary
     """
-    with open(config_path, 'r') as f:
+    with open(config_path, 'r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
     return config
 

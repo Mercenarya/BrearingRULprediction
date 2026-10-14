@@ -1,0 +1,59 @@
+test.npz:
+  mae: 0.2501761019229889
+  phm_score: !!python/object/apply:numpy._core.multiarray.scalar
+  - &id001 !!python/object/apply:numpy.dtype
+    args:
+    - f4
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    /mfQPA==
+  r2: -0.0002288818359375
+  rmse: !!python/object/apply:numpy._core.multiarray.scalar
+  - &id002 !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    KSWHCGZ90j8=
+test_pronostia.npz:
+  mae: 0.25019097328186035
+  phm_score: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    OGvQPA==
+  r2: -0.0003453493118286133
+  rmse: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    1glOnKx90j8=
+test_xjtusy.npz:
+  mae: 0.25159868597984314
+  phm_score: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    jJzRPA==
+  r2: 9.673833847045898e-05
+  rmse: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    0SXSCmyY0j8=
